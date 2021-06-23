@@ -1,0 +1,59 @@
+.who-is {
+  background-color: $alabaster;
+  padding: 70px 0 135px;
+  &__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    width: 100%;
+    max-width: 1025px;
+    margin: 0 auto 60px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 25px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    width: 100%;
+    max-width: 250px;
+    position: relative;
+    &:nth-child(3) {
+      & .who-is__descr {
+        width: 175px;
+      }
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      top: -13px;
+      left: -23px;
+      width: 70px;
+      height: 70px;
+      background-image: url('../img/sector.svg');
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__item-title {
+    font-weight: 800;
+    font-size: 6.4rem;
+    line-height: 75px;
+    letter-spacing: 0.04em;
+    color: $black;
+  }
+
+  &__descr {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 25px;
+  }
+}

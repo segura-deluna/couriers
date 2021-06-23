@@ -1,5 +1,10 @@
 .calculator {
   padding-top: 70px;
+
+  &__container {
+    position: relative;
+  }
+
   &__title {
     text-align: center;
     margin-bottom: 70px;
