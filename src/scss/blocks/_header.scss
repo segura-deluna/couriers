@@ -1,5 +1,103 @@
 .header {
-  &__title{
-    text-align: center;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
   }
+
+  &__logo {
+    width: 100%;
+    max-width: 180px;
+    height: 45px;
+  }
+
+  &__nav {
+    width: 100%;
+    padding: 25px 55px;
+    border-radius: 3px;
+    background-color: $royalblue;
+  }
+}
+
+.logo-link {
+  display: inline-block;
+  width: 100%;
+  max-width: 180px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__img {
+    width: 40px;
+    height: 44px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: 'Rounds', sans-serif;
+    font-size: 3rem;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    color: $ebony;
+    & span {
+      display: inline-block;
+      font-family: 'Norms', sans-serif;
+      font-weight: 500;
+      font-size: 1.1rem;
+      line-height: 12px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: $cadetblue;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__whatsapp {
+    display: inline-block;
+    width: 100%;
+    max-width: 130px;
+  }
+
+  &__telegram {
+    display: inline-block;
+    width: 100%;
+    max-width: 120px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+  }
+
+  &__img {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: $mako;
+  }
+}
+
+.telephone {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 28px;
+  letter-spacing: 0.02em;
 }
