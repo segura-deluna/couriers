@@ -149,6 +149,7 @@ svg {
   padding: 25px 55px;
   border-radius: 3px;
   background-color: #365edc;
+  box-shadow: 0px 30px 30px -15px rgba(40, 74, 183, 0.2);
 }
 
 .logo-link {
@@ -339,6 +340,8 @@ svg {
 
 .jobs__container {
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .jobs__wrap {
@@ -403,6 +406,55 @@ svg {
 
 .jobs__btn {
   margin-bottom: 90px;
+}
+
+.jobs__images {
+  position: relative;
+  width: 60%;
+}
+
+.jobs__img {
+  position: absolute;
+}
+
+.jobs__img:nth-child(1) {
+  width: 216px;
+  height: 112px;
+  right: 20px;
+  bottom: 0;
+  z-index: 6;
+}
+
+.jobs__img:nth-child(2) {
+  width: 671px;
+  height: 524px;
+  right: -10px;
+  bottom: 0;
+  z-index: 5;
+}
+
+.jobs__img:nth-child(3) {
+  width: 271px;
+  height: 134px;
+  left: -265px;
+  bottom: 0;
+  z-index: 4;
+}
+
+.jobs__img:nth-child(4) {
+  width: 904px;
+  height: 246px;
+  left: -140px;
+  bottom: 0;
+  z-index: 3;
+}
+
+.jobs__img:nth-child(5) {
+  width: 576px;
+  height: 276px;
+  right: -160px;
+  bottom: 85px;
+  z-index: 2;
 }
 
 .title__text {

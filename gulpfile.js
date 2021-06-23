@@ -51,7 +51,7 @@ let { src, dest } = require('gulp'),
   uglify = require('gulp-uglify-es').default,
   imagemin = require('gulp-imagemin'),
   webp = require('gulp-webp'),
-  webphtml = require('gulp-webp-html'),
+  // webphtml = require('gulp-webp-html'),
   svgSprite = require('gulp-svg-sprite'),
   ttf2woff = require('gulp-ttf2woff'),
   ttf2woff2 = require('gulp-ttf2woff2'),
@@ -68,17 +68,11 @@ function browserSync(params) {
 }
 
 function html(params) {
-  return src(path.src.html)
-  .pipe(fileinclude())
-  .pipe(webphtml())
-  .pipe(dest(path.build.html))
-  .pipe(browsersync.stream());
+  return src(path.src.html).pipe(fileinclude()).pipe(dest(path.build.html)).pipe(browsersync.stream());
 }
 
 const css = () => {
-  return src(path.src.css)
-  .pipe(dest(path.build.css))
-  .pipe(browsersync.stream());
+  return src(path.src.css).pipe(dest(path.build.css)).pipe(browsersync.stream());
 };
 
 const scss = () => {
@@ -127,43 +121,39 @@ function js(params) {
 }
 
 function jsLibs(params) {
-  return src(path.src.jsLibs)
-  .pipe(dest(path.build.jsLibs));
+  return src(path.src.jsLibs).pipe(dest(path.build.jsLibs));
 }
 
 function images(params) {
-  return src(path.src.img)
-    .pipe(
-      webp({
-        quality: 70,
-      })
-    )
-    .pipe(dest(path.build.img))
-    .pipe(src(path.src.img))
-    .pipe(
-      imagemin({
-        progressive: true,
-        svgoPlugins: [{ removeViewBox: false }],
-        interlaced: true,
-        optimizationLevel: 3, // 0 to 7
-      })
-    )
-    .pipe(dest(path.build.img))
-    .pipe(browsersync.stream());
+  return (
+    src(path.src.img)
+      // .pipe(
+      //   webp({
+      //     quality: 70,
+      //   })
+      // )
+      .pipe(dest(path.build.img))
+      .pipe(src(path.src.img))
+      .pipe(
+        imagemin({
+          progressive: true,
+          svgoPlugins: [{ removeViewBox: false }],
+          // interlaced: true,
+          optimizationLevel: 3, // 0 to 7
+        })
+      )
+      .pipe(dest(path.build.img))
+      .pipe(browsersync.stream())
+  );
 }
 
 function video(params) {
-  return src(path.src.video)
-  .pipe(dest(path.build.video));
+  return src(path.src.video).pipe(dest(path.build.video));
 }
 
 function fonts(params) {
-  src(path.src.fonts)
-  .pipe(ttf2woff())
-  .pipe(dest(path.build.fonts));
-  return src(path.src.fonts)
-  .pipe(ttf2woff2())
-  .pipe(dest(path.build.fonts));
+  src(path.src.fonts).pipe(ttf2woff()).pipe(dest(path.build.fonts));
+  return src(path.src.fonts).pipe(ttf2woff2()).pipe(dest(path.build.fonts));
 }
 
 gulp.task('otf2ttf', function () {

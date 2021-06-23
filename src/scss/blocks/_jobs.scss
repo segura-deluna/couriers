@@ -1,6 +1,8 @@
 .jobs {
   &__container {
     position: relative;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__wrap {
@@ -66,14 +68,55 @@
   &__btn {
     margin-bottom: 90px;
   }
+
+  &__images {
+    position: relative;
+    width: 60%;
+  }
+
+  &__img {
+    position: absolute;
+    &:nth-child(1) {
+      width: 216px;
+      height: 112px;
+      right: 20px;
+      bottom: 0;
+      z-index: 6;
+    }
+    &:nth-child(2) {
+      width: 671px;
+      height: 524px;
+      right: -10px;
+      bottom: 0;
+      z-index: 5;
+    }
+    &:nth-child(3) {
+      width: 271px;
+      height: 134px;
+      left: -265px;
+      bottom: 0;
+      z-index: 4;
+    }
+    &:nth-child(4) {
+      width: 904px;
+      height: 246px;
+      left: -140px;
+      bottom: 0;
+      z-index: 3;
+    }
+    &:nth-child(5) {
+      width: 576px;
+      height: 276px;
+      right: -160px;
+      bottom: 85px;
+      z-index: 2;
+    }
+  }
 }
 
 .title {
   &__text {
     width: 100%;
     font-size: 4.2em;
-  }
-
-  &__price {
   }
 }
