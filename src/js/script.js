@@ -41,22 +41,22 @@ document.addEventListener('DOMContentLoaded', () => {
   // };
 
   // * Sliders ================
-  // const brandCar = new Swiper('#brandCar', {
-  //   watchSlidesProgress: true,
-  //   watchSlidesVisibility: true,
-  //   slidesPerView: 1,
-  //   loop: true,
-  //   navigation: {
-  //     nextEl: '.slider-arrow-right',
-  //     prevEl: '.slider-arrow-left',
-  //   },
-  //   breakpoints: {
-  //     1200: {
-  //       slidesPerView: 1,
-  //       spaceBetween: 20,
-  //     },
-  //   },
-  // });
+  const clients = new Swiper('.clients__slider-items', {
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
+    slidesPerView: 4,
+    loop: false,
+    navigation: {
+      nextEl: '.slider-arrow-left',
+      prevEl: '.slider-arrow-right',
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    },
+  });
   //
   // const shops = new Swiper('#shops', {
   //   watchSlidesProgress: true,
