@@ -60,7 +60,7 @@ html {
 
 body {
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: #fff;
   font-family: 'Norms', sans-serif;
   color: #3d4048;
@@ -121,14 +121,16 @@ svg {
 
 .title-price {
   width: 100%;
-  background-image: url("../img/subtract.svg");
+  height: 100%;
+  background-image: url(../img/subtract.svg);
   background-repeat: no-repeat;
+  background-size: cover;
   font-weight: 800;
   color: #000;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 25px;
+  padding: 10px 25px;
 }
 
 .header__wrap {
@@ -142,6 +144,11 @@ svg {
   width: 100%;
   max-width: 180px;
   height: 45px;
+}
+
+.header__dropdown {
+  max-width: 180px;
+  height: 40px;
 }
 
 .header__nav {
@@ -237,8 +244,6 @@ svg {
 
 .dropdown {
   width: 100%;
-  max-width: 180px;
-  height: 40px;
   border: 1px solid #ebeff6;
   border-radius: 3px;
 }
@@ -248,7 +253,7 @@ svg {
   z-index: 2;
   width: 100%;
   height: 100%;
-  padding: 15px 45px;
+  padding: 15px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -291,7 +296,6 @@ svg {
 
 .content__item {
   width: 100%;
-  max-width: 180px;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -484,6 +488,74 @@ svg {
 
 .btn--blue:hover {
   background: #3b69fa;
+}
+
+.calculator {
+  padding-top: 70px;
+}
+
+.calculator__title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.calculator__items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+
+.calculator__item {
+  min-width: 285px;
+}
+
+.calculator__name {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.calculator__dropdown {
+  width: 100%;
+  height: 60px;
+}
+
+.calculator__dropdown .dropdown__title-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #b5bac8;
+}
+
+.price-week {
+  width: 100%;
+}
+
+.price-week__title {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.price-week__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.price-week__label {
+  max-width: 285px;
+  height: 70px;
+  margin-right: 30px;
+  font-size: 4rem;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 .footer__title {

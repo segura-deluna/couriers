@@ -12,7 +12,7 @@ html {
 
 body {
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: $white;
   font-family: 'Norms', sans-serif;
   color: $mako;
@@ -72,12 +72,14 @@ svg {
 
 .title-price {
   width: 100%;
-  background-image: url('../img/subtract.svg');
+  height: 100%;
+  background-image: url(../img/subtract.svg);
   background-repeat: no-repeat;
+  background-size: cover;
   font-weight: 800;
-  color: $black;
+  color: #000;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 25px;
+  padding: 10px 25px;
 }
