@@ -728,6 +728,117 @@ svg {
   background-color: #fafafa;
 }
 
+.vacancies {
+  padding: 70px 0 100px;
+  background-color: #fafafa;
+}
+
+.vacancies__title {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.vacancies__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 95px 60px;
+}
+
+.vacancies__card {
+  width: 100%;
+  max-width: 585px;
+  height: 200px;
+}
+
+.vacancies__card:nth-child(3) .card__img-front {
+  left: -25px;
+}
+
+.card {
+  position: relative;
+}
+
+.card__wrap {
+  overflow: hidden;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.card__img-bg {
+  position: absolute;
+  right: -75%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card__img-bg1 {
+  position: absolute;
+  left: 0;
+}
+
+.card__img-bg2 {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+}
+
+.card__img-front {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  z-index: 5;
+}
+
+.card__descr {
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  margin-bottom: 15px;
+}
+
+.card__list {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 25px;
+  padding-left: 20px;
+}
+
+.card__list li {
+  list-style-type: disc;
+  color: #ffd600;
+}
+
+.card__list li span {
+  color: #3d4048;
+}
+
+.card__back {
+  width: 95%;
+  height: 102%;
+  background-color: #365edc;
+  border-radius: 5px;
+  box-shadow: 0px 30px 30px -15px rgba(40, 74, 183, 0.15);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
 .footer__title {
   text-align: center;
 }
