@@ -800,6 +800,8 @@ svg {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  z-index: 5;
 }
 
 .card__title {
@@ -824,6 +826,12 @@ svg {
 
 .card__list li span {
   color: #3d4048;
+}
+
+.card__text {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 24px;
 }
 
 .card__back {
@@ -1008,6 +1016,47 @@ svg {
   border-left: 70px solid transparent;
   border-right: 70px solid transparent;
   border-top: 40px solid #365edc;
+}
+
+.safety {
+  padding: 70px 0 100px;
+  background: #fafafa;
+}
+
+.safety__title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.safety__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.safety__card {
+  width: 100%;
+  max-width: 585px;
+  height: 200px;
+}
+
+.safety__card:nth-child(2) .card__img-front {
+  top: 50%;
+  transform: translateY(-80%);
+  left: 27px;
+}
+
+.safety__card .card__wrap {
+  justify-content: space-between;
+  padding-right: 25px;
+}
+
+.safety__card .card__title {
+  font-size: 2rem;
+  line-height: 22px;
+}
+
+.safety__card .card__descr {
+  max-width: 350px;
 }
 
 .footer__title {
