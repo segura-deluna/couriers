@@ -1202,28 +1202,41 @@ svg {
   border: none;
   border: 1px solid #ebeff6;
   border-radius: 5px;
-  padding: 0 20px;
+  padding: 18px 20px 15px;
 }
 
 .form__input::-moz-placeholder {
   font-weight: normal;
   font-size: 1.6rem;
-  line-height: 19px;
+  line-height: 20px;
   color: #b5bac8;
 }
 
 .form__input:-ms-input-placeholder {
   font-weight: normal;
   font-size: 1.6rem;
-  line-height: 19px;
+  line-height: 20px;
   color: #b5bac8;
 }
 
 .form__input::placeholder {
   font-weight: normal;
   font-size: 1.6rem;
-  line-height: 19px;
+  line-height: 20px;
   color: #b5bac8;
+}
+
+.form__dropdown {
+  width: 100%;
+  max-width: 285px;
+  height: 60px;
+  background: #fff;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 19px;
+  border: none;
+  border: 1px solid #ebeff6;
+  border-radius: 5px;
 }
 
 .form__submit {
