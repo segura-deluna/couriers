@@ -1,0 +1,76 @@
+.helper {
+  padding: 60px 0 125px;
+  &__card {
+    width: 100%;
+    max-width: 1230px;
+    height: 400px;
+    & .card__wrap {
+      width: 100%;
+      height: 100%;
+      background-image: url('../img/helper-bg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+    margin-bottom: 25px;
+  }
+
+  &__descr,
+  &__text {
+    width: 100%;
+    max-width: 900px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  &__descr {
+    margin-bottom: 25px;
+  }
+
+  &__social {
+    width: 100%;
+    max-width: 540px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__whatsapp {
+    width: 100%;
+    max-width: 240px;
+    height: 60px;
+    background: linear-gradient(266.42deg, #59f36b 0%, #43d854 100%);
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      background: linear-gradient(266.42deg, #43e756 0%, #2fcb41 100%);
+    }
+  }
+
+  &__whatsapp-icon,
+  &__telegram-icon {
+    margin-right: 8px;
+  }
+
+  &__telegram {
+    width: 100%;
+    max-width: 240px;
+    height: 60px;
+    background: linear-gradient(266.42deg, #26b7ff 0%, #0088cc 100%);
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      background: linear-gradient(266.42deg, #1aa9f0 0%, #0082c2 100%);
+    }
+  }
+}
