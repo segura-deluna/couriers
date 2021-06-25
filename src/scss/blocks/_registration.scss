@@ -39,7 +39,7 @@
       background: $royalblue;
       box-shadow: 0px 30px 30px -15px rgba(40, 74, 183, 0.2);
 
-      & > .btn__icon {
+      & > .btn__icon-tab {
         display: block;
         margin-right: 8px;
       }
@@ -90,7 +90,7 @@
 }
 
 .btn {
-  &__icon {
+  &__icon-tab {
     display: none;
   }
 }
