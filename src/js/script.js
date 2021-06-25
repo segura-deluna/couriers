@@ -92,78 +92,49 @@ document.addEventListener('DOMContentLoaded', () => {
   //   },
   // });
   //
-  // const hints = new Swiper('#hints', {
-  //   watchSlidesProgress: true,
-  //   watchSlidesVisibility: true,
-  //   slidesPerView: 1,
-  //   loop: true,
-  //   navigation: {
-  //     nextEl: '.slider-arrow-right',
-  //     prevEl: '.slider-arrow-left',
-  //   },
-  // });
 
   // * TABS ===========================
-  // const tabs = (headerSelector, tabSelector, contentSelector, activeClass) => {
-  //   const header = document.querySelector(headerSelector),
-  //     tab = document.querySelectorAll(tabSelector),
-  //     content = document.querySelectorAll(contentSelector);
-  //
-  //   function hideTabContent() {
-  //     content.forEach((item) => {
-  //       item.style.display = 'none';
-  //     });
-  //
-  //     tab.forEach((item) => {
-  //       item.classList.remove(activeClass);
-  //     });
-  //   }
-  //
-  //   function showTabContent(i = 0) {
-  //     content[i].style.display = 'block';
-  //     tab[i].classList.add(activeClass);
-  //   }
-  //
-  //   hideTabContent();
-  //   showTabContent();
+  const tabs = (headerSelector, tabSelector, contentSelector, activeClass) => {
+    const header = document.querySelector(headerSelector),
+      tab = document.querySelectorAll(tabSelector),
+      content = document.querySelectorAll(contentSelector);
 
-  //   header.addEventListener('click', (e) => {
-  //     const target = e.target;
-  //     if (
-  //       target &&
-  //       (target.classList.contains(tabSelector.replace(/\./, '')) ||
-  //         target.parentNode.classList.contains(tabSelector.replace(/\./, '')))
-  //     ) {
-  //       tab.forEach((item, i) => {
-  //         if (target == item || target.parentNode == item) {
-  //           hideTabContent();
-  //           showTabContent(i);
-  //         }
-  //       });
-  //     }
-  //   });
-  // };
-  //
-  // tabs('.registration__tab-triggers', '.registration__tab-trigger', '.registration__tab-item', 'active');
-  // tabs('.comment__tabs', '.comment__tabs-item', '.comment__content-item', 'active');
+    function hideTabContent() {
+      content.forEach((item) => {
+        item.style.display = 'none';
+      });
 
-  // * Rating Star ======================
-  // const rating = document.querySelector('.rating'),
-  //   ratingItem = document.querySelectorAll('.rating-item');
-  //
-  // rating.onclick = function (e) {
-  //   let target = e.target;
-  //   if (target.classList.contains('rating-item')) {
-  //     removeClass(ratingItem, 'active');
-  //     target.classList.add('active');
-  //   }
-  // };
-  //
-  // function removeClass(elements, className) {
-  //   for (let i = 0; i < elements.length; i++) {
-  //     elements[i].classList.remove(className);
-  //   }
-  // }
+      tab.forEach((item) => {
+        item.classList.remove(activeClass);
+      });
+    }
+
+    function showTabContent(i = 0) {
+      content[i].style.display = 'block';
+      tab[i].classList.add(activeClass);
+    }
+
+    hideTabContent();
+    showTabContent();
+
+    header.addEventListener('click', (e) => {
+      const target = e.target;
+      if (
+        target &&
+        (target.classList.contains(tabSelector.replace(/\./, '')) ||
+          target.parentNode.classList.contains(tabSelector.replace(/\./, '')))
+      ) {
+        tab.forEach((item, i) => {
+          if (target == item || target.parentNode == item) {
+            hideTabContent();
+            showTabContent(i);
+          }
+        });
+      }
+    });
+  };
+
+  tabs('.tab-triggers', '.tab-trigger', '.tab-item', 'active');
 
   // * Dropdown =================================================================
   const accordions = document.querySelectorAll('.dropdown');

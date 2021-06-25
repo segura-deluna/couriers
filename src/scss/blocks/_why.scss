@@ -3,15 +3,6 @@
   padding: 70px 0 60px;
   background: $alabaster;
 
-  &__bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200px;
-    background: radial-gradient(120% 120% at 50% 0%, #f3f3f3 0%, rgba(250, 250, 250, 0) 57.29%);
-  }
-
   &__title {
     position: relative;
     z-index: 1;

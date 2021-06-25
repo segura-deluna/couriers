@@ -1,0 +1,144 @@
+<section class="registration">
+	<div class="top-bg"></div>
+	<div class="container">
+		<h2 class="registration__title title">Введите данные для автоматической регистрации по выбранной вакансии</h2>
+		<!-- /.registration__title title -->
+
+		<!-- TABS -->
+		<div class="registration__tabs tab-triggers">
+			<div class="registration__tab tab-trigger">
+				<div class="btn__icon">
+					<img src="img/btn-check.svg" alt="check">
+				</div>
+				Водитель-курьер
+			</div>
+			<!-- /.registration__tab -->
+			<div class="registration__tab tab-trigger ">
+				<div class="btn__icon">
+					<img src="img/btn-check.svg" alt="check">
+				</div>
+				Курьер пеший, вело или само
+			</div>
+			<!-- /.registration__tab -->
+			<div class="registration__tab tab-trigger active">
+				<div class="btn__icon">
+					<img src="img/btn-check.svg" alt="check">
+				</div>
+				Водитель такси
+			</div>
+			<!-- /.registration__tab -->
+			<div class="registration__tab tab-trigger">
+				<div class="btn__icon">
+					<img src="img/btn-check.svg" alt="check">
+				</div>
+				Водитель фургона
+			</div>
+			<!-- /.registration__tab -->
+		</div>
+		<!-- /.registration__tabs -->
+
+		<div class="registration__content">
+			<div class="registration__content-item tab-item"></div>
+			<div class="registration__content-item tab-item"></div>
+			<div class="registration__content-item tab-item active">
+				<div class="registration__content-header">
+					<h3 class="registration__content-title">Данные водительского удостоверения</h3>
+					<p class="registration__content-subtitle">Шаг <span>1</span> из 2:</p>
+				</div>
+				<form action="#" class="registration__content-form form">
+					<div class="form__items">
+						<div class="form__item">
+							<label for="first-name">Фамилия</label>
+							<input type="text" class="form__input" id="first-name" name="first-name" placeholder="Иванов">
+						</div>
+						<div class="form__item">
+							<label for="second-name">Имя</label>
+							<input type="text" class="form__input" id="second-name" name="second-name" placeholder="Иван">
+						</div>
+						<div class="form__item">
+							<label for="third-name">Отчество (не обязательно)</label>
+							<input type="text" class="form__input" id="third-name" name="third-name" placeholder="Иванович">
+						</div>
+						<div class="form__item">
+							<label for="phone">Ваш телефон (например, +79991234567)</label>
+							<input type="text" class="form__input" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
+						</div>
+						<div class="form__item">
+							<label>Ваш город</label>
+							<div class="form__input dropdown" id="city">
+								<div class="dropdown__title">
+									<div class="dropdown__title-text">Москва</div>
+									<div class="dropdown__title-icon"></div>
+								</div>
+								<div class="dropdown__content">
+									<ul>
+										<li class="content__item">
+											<a href="" class="content__link">Санкт-Петербург</a>
+										</li>
+										<li class="content__item">
+											<a href="" class="content__link">Воронеж</a>
+										</li>
+										<li class="content__item">
+											<a href="" class="content__link">Ещё какой-то</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- /.dropdown -->
+						</div>
+						<div class="form__item">
+							<label>Страна выдачи водительских прав</label>
+							<div class="form__input dropdown" id="country">
+								<div class="dropdown__title">
+									<div class="dropdown__title-text">Выбрать страну</div>
+									<div class="dropdown__title-icon"></div>
+								</div>
+								<div class="dropdown__content">
+									<ul>
+										<li class="content__item">
+											<a href="" class="content__link">Россия</a>
+										</li>
+										<li class="content__item">
+											<a href="" class="content__link">Украина</a>
+										</li>
+										<li class="content__item">
+											<a href="" class="content__link">Ещё какая-то</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- /.dropdown -->
+						</div>
+						<div class="form__item">
+							<label for="series">Сария и номер водительских прав</label>
+							<input type="text" class="form__input" id="series" name="series" placeholder="____ -____-__">
+						</div>
+						<div class="form__item">
+							<label for="date">Дата выдачи</label>
+							<input type="text" class="form__input" id="date" name="date" placeholder="дд.мм.гг">
+						</div>
+					</div>
+					<!-- /.form__items -->
+					<div class="form__submit">
+						<div class="form__consent">
+							<input type="checkbox" name="consent" id="consent">
+							<label for="consent">Я даю согласие на условия оферты</label>
+						</div>
+						<button class="form__button btn btn--blue" type="submit">
+							<span>
+								<img class="form__btn-icon" src="img/btn-check.svg" alt="check">
+							</span>
+							Подключиться
+						</button>
+					</div>
+					<!-- /.form__submit -->
+				</form>
+				<!-- /.content__form -->
+			</div>
+			<div class="registration__content-item tab-item"></div>
+		</div>
+		<!-- /.registration__content -->
+	</div>
+	<!-- /.container -->
+</section>
+<!-- /.registration -->

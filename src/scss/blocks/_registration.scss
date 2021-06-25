@@ -1,0 +1,96 @@
+.registration {
+  padding: 70px 0 90px;
+  background: $alabaster;
+  position: relative;
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 936px;
+    font-size: 3.6rem;
+    margin: 0 auto 65px;
+  }
+
+  // * Tabs ================
+  &__tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+  }
+
+  &__tab {
+    width: 100%;
+    max-width: 285px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $porcelian;
+    color: $black;
+    cursor: pointer;
+    &.active {
+      cursor: default;
+      border-radius: 3px;
+      color: $white;
+      background: $royalblue;
+      box-shadow: 0px 30px 30px -15px rgba(40, 74, 183, 0.2);
+
+      & > .btn__icon {
+        display: block;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    width: 100%;
+    height: 600px;
+  }
+
+  &__content-item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  &__content-header {
+    width: 100%;
+    max-width: 1230px;
+    height: 90px;
+    border: 1px solid $catskill;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content-title {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 28px;
+    color: $royalblue;
+    margin-bottom: 10px;
+  }
+
+  &__content-subtitle {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 18px;
+  }
+
+  &__content-form {
+  }
+}
+
+.btn {
+  &__icon {
+    display: none;
+  }
+}
