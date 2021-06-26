@@ -1477,6 +1477,80 @@ svg {
   background: linear-gradient(266.42deg, #1aa9f0 0%, #0082c2 100%);
 }
 
-.footer__title {
-  text-align: center;
+.footer__top {
+  background: #272a34;
+  padding: 40px 0 43px;
+}
+
+.footer__top .social__name {
+  color: #fff;
+}
+
+.footer__top .logo__text {
+  color: #fff;
+}
+
+.footer__top-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.footer__telephone {
+  color: #fff;
+}
+
+.footer__bottom {
+  padding: 20px 0 20px;
+  background: #1c1e24;
+}
+
+.footer__bottom-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__bottom-text {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 20px;
+  color: #b5bac8;
+}
+
+.footer__bottom-text:nth-child(1) {
+  width: 100%;
+  max-width: 146px;
+}
+
+.footer__bottom-text:nth-child(2) {
+  width: 100%;
+  max-width: 606px;
+  text-align: right;
+}
+
+.offer {
+  display: inline-block;
+  width: 100%;
+  max-width: 115px;
+}
+
+.offer__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+}
+
+.offer__img {
+  width: 40px;
+  height: 40px;
+}
+
+.offer__name {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #fff;
 }
