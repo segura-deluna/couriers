@@ -1314,7 +1314,45 @@ svg {
   margin: 0 auto;
 }
 
-.form__items {
+.form__items.step1 {
+  display: grid;
+  display: none;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  padding-top: 40px;
+  margin-bottom: 90px;
+}
+
+.form__items.step1 .item1 {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+.form__items.step1 .item2 {
+  grid-area: 1 / 4 / 2 / 7;
+}
+
+.form__items.step1 .item3 {
+  grid-area: 1 / 7 / 2 / 10;
+}
+
+.form__items.step1 .item4 {
+  grid-area: 1 / 10 / 2 / 13;
+}
+
+.form__items.step1 .item5 {
+  grid-area: 2 / 1 / 3 / 5;
+}
+
+.form__items.step1 .item6 {
+  grid-area: 2 / 5 / 3 / 9;
+}
+
+.form__items.step1 .item7 {
+  grid-area: 2 / 9 / 3 / 13;
+}
+
+.form__items.step2 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -1323,32 +1361,88 @@ svg {
   margin-bottom: 90px;
 }
 
-.form__items .item1 {
+.form__items.step2 .item1 {
   grid-area: 1 / 1 / 2 / 4;
 }
 
-.form__items .item2 {
+.form__items.step2 .item2 {
   grid-area: 1 / 4 / 2 / 7;
 }
 
-.form__items .item3 {
+.form__items.step2 .item3 {
   grid-area: 1 / 7 / 2 / 10;
 }
 
-.form__items .item4 {
+.form__items.step2 .item4 {
   grid-area: 1 / 10 / 2 / 13;
 }
 
-.form__items .item5 {
+.form__items.step2 .item5 {
   grid-area: 2 / 1 / 3 / 5;
 }
 
-.form__items .item6 {
+.form__items.step2 .item6 {
   grid-area: 2 / 5 / 3 / 9;
 }
 
-.form__items .item7 {
+.form__items.step2 .item7 {
   grid-area: 2 / 9 / 3 / 13;
+}
+
+.form__items.truck.step2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+
+.form__items.truck.step2 .item1 {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.form__items.truck.step2 .item2 {
+  grid-area: 1 / 3 / 2 / 5;
+}
+
+.form__items.truck.step2 .item3 {
+  grid-area: 1 / 5 / 2 / 7;
+}
+
+.form__items.truck.step2 .item4 {
+  grid-area: 1 / 7 / 2 / 9;
+}
+
+.form__items.truck.step2 .item5 {
+  grid-area: 1 / 9 / 2 / 11;
+}
+
+.form__items.truck.step2 .item6 {
+  grid-area: 1 / 11 / 2 / 13;
+}
+
+.form__items.truck.step2 .item7 {
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+.form__items.truck.step2 .item8 {
+  grid-area: 2 / 3 / 3 / 5;
+}
+
+.form__items.truck.step2 .item9 {
+  grid-area: 2 / 5 / 3 / 7;
+}
+
+.form__items.truck.step2 .item10 {
+  grid-area: 2 / 7 / 3 / 9;
+}
+
+.form__items.truck.step2 .item11 {
+  grid-area: 2 / 9 / 3 / 11;
+}
+
+.form__items.truck.step2 .item12 {
+  grid-area: 2 / 11 / 3 / 13;
 }
 
 .form__items.walking {
@@ -1356,6 +1450,8 @@ svg {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 30px;
+  padding-top: 40px;
+  margin-bottom: 90px;
 }
 
 .form__items.walking .item1 {
