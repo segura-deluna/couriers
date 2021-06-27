@@ -1,44 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-  //* Header-navbar ============
-  // window.onscroll = () => {
-  //   const header = document.getElementById('bottomHeader');
-  //   const sticky = header.offsetTop;
   //
-  //   const myFunction = () => {
-  //     if (window.pageYOffset >= sticky + 150 || window.innerWidth <= 1025) {
-  //       header.classList.remove('hidden');
-  //       header.classList.add('sticky');
-  //     } else {
-  //       header.classList.remove('sticky');
-  //       header.classList.add('hidden');
-  //     }
-  //   };
-  //   myFunction();
-  // };
-
-  // * Open-Close modals =========
-  // let popupsToggle = document.querySelectorAll('.open-popup');
-  // let popupClose = document.querySelectorAll('.close');
+  // * Smooth-scroll ================
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 300,
+    offset: 90,
+  });
   //
-  // popupsToggle.forEach(function (item) {
-  //   item.addEventListener('click', function () {
-  //     let popupName = item.getAttribute('data-popup');
-  //     document.getElementById(popupName).style.display = 'block';
-  //   });
-  // });
-  //
-  // popupClose.forEach(function (item) {
-  //   item.addEventListener('click', function () {
-  //     let popup = item.closest('.modal');
-  //     popup.style.display = 'none';
-  //   });
-  // });
-  //
-  // window.onclick = function (e) {
-  //   if (e.target.classList.contains('modal')) {
-  //     e.target.style.display = 'none';
-  //   }
-  // };
 
   // * Sliders ================
   const clientsSlider = new Swiper('.clients__slider-items', {

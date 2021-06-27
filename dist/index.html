@@ -28,80 +28,98 @@
 		<h1>Первый экран</h1>
 
 		<!--	HEADER -->
-		<header class="header">
+		<header class="header" id="header">
   <div class="container">
-    <div class="header__wrap">
-      <a href="" class="logo-link">
-        <div class="header__logo logo">
-          <img src="img/courier.png" alt="courier" class="logo__img">
-          <div class="logo__text">
-            Курьер
-            <span>курьерская служба</span>
+    <div class="header__fixed">
+      <div class="header__wrap">
+        <a href="#header" class="logo-link" data-scroll>
+          <div class="header__logo logo">
+            <img src="img/courier.png" alt="courier" class="logo__img">
+            <div class="logo__text">
+              Курьер
+              <span>курьерская служба</span>
+            </div>
           </div>
-        </div>
-      </a>
-      <!-- /.header__logo logo -->
+        </a>
+        <!-- /.header__logo logo -->
 
-      <a href="" class="social__whatsapp">
-        <div class="social__item">
-          <div class="social__img">
-            <svg>
-              <use xlink:href="img/icons/sprite.svg#whatsapp"></use>
-            </svg>
+        <a href="" class="social__whatsapp">
+          <div class="social__item">
+            <div class="social__img">
+              <svg>
+                <use xlink:href="img/icons/sprite.svg#whatsapp"></use>
+              </svg>
+            </div>
+            <p class="social__name">WhatsApp</p>
           </div>
-          <p class="social__name">WhatsApp</p>
-        </div>
-      </a>
-      <!-- /.social__whatsapp -->
+        </a>
+        <!-- /.social__whatsapp -->
 
-      <a href="" class="social__telegram">
-        <div class="social__item">
-          <div class="social__img">
-            <svg>
-              <use xlink:href="img/icons/sprite.svg#telegram"></use>
-            </svg>
+        <a href="" class="social__telegram">
+          <div class="social__item">
+            <div class="social__img">
+              <svg>
+                <use xlink:href="img/icons/sprite.svg#telegram"></use>
+              </svg>
+            </div>
+            <p class="social__name">Telegram</p>
           </div>
-          <p class="social__name">Telegram</p>
-        </div>
-      </a>
-      <!-- /.social__telegramm -->
+        </a>
+        <!-- /.social__telegramm -->
 
-      <div class="header__telephone telephone">+7 (999) 545-58-79</div>
-      <!-- /.header__telephone telephone -->
-      <div class="header__dropdown dropdown">
-        <div class="dropdown__title">
-          <div class="dropdown__title-text">Помощь</div>
-          <div class="dropdown__title-icon"></div>
+        <div class="header__telephone telephone">+7 (999) 545-58-79</div>
+        <!-- /.header__telephone telephone -->
+        <div class="header__dropdown dropdown">
+          <div class="dropdown__title">
+            <div class="dropdown__title-text">Помощь</div>
+            <div class="dropdown__title-icon"></div>
+          </div>
+          <!-- /.dropdown__title -->
+          <div class="dropdown__content">
+            <ul>
+              <li class="content__item">
+                <a href="" class="content__link">Чат WhatsApp</a>
+              </li>
+              <li class="content__item">
+                <a href="" class="content__link">Чат Telegram</a>
+              </li>
+              <li class="content__item">
+                <a href="#registration" class="content__link" data-scroll>Анкета</a>
+              </li>
+              <li class="content__item">
+                <a href="#calculator" class="content__link" data-scroll>Калькулятор</a>
+              </li>
+              <li class="content__item">
+                <a href="#vacancies" class="content__link" data-scroll>Наши вакансии</a>
+              </li>
+              <li class="content__item">
+                <a href="#whois" class="content__link" data-scroll>Кто мы</a>
+              </li>
+              <li class="content__item">
+                <a href="#why" class="content__link" data-scroll>Почему мы</a>
+              </li>
+              <li class="content__item">
+                <a href="" class="content__link">Инструкция</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.dropdown__content -->
         </div>
-        <!-- /.dropdown__title -->
-        <div class="dropdown__content">
-          <ul>
-            <li class="content__item">
-              <a href="" class="content__link">Чат WhatsApp</a>
-            </li>
-            <li class="content__item">
-              <a href="" class="content__link">Чат Telegram</a>
-            </li>
-            <li class="content__item">
-              <a href="" class="content__link">Ещё какой-то</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.dropdown__content -->
+        <!-- /.header__dropdown dropdown -->
       </div>
-      <!-- /.header__dropdown dropdown -->
+      <!-- /.header__wrap -->
     </div>
-    <!-- /.header__wrap -->
+    <!-- /.header__fixed -->
 
     <div class="header__nav navigation">
       <nav class="navigation__list">
-        <a href="" class="navigation__link">Кто мы</a>
-        <a href="" class="navigation__link">Наши вакансии</a>
-        <a href="" class="navigation__link">Почему мы</a>
-        <a href="" class="navigation__link">Калькулятор</a>
-        <a href="" class="navigation__link">Как приступить к работе</a>
-        <a href="" class="navigation__link">Анкета</a>
-        <a href="" class="navigation__link">Контакты</a>
+        <a href="#whois" class="navigation__link" data-scroll>Кто мы</a>
+        <a href="#vacancies" class="navigation__link" data-scroll>Наши вакансии</a>
+        <a href="#why" class="navigation__link" data-scroll>Почему мы</a>
+        <a href="#calculator" class="navigation__link" data-scroll>Калькулятор</a>
+        <a href="#getstart" class="navigation__link" data-scroll>Как приступить к работе</a>
+        <a href="#registration" class="navigation__link" data-scroll>Анкета</a>
+        <a href="#helper" class="navigation__link" data-scroll>Контакты</a>
       </nav>
     </div>
     <!-- /.header__nav -->
@@ -154,13 +172,15 @@
 			</div>
 			<!-- /.jobs__items -->
 
-			<div class="jobs__btn btn btn--blue">
-				<div class="btn__icon">
-					<img src="img/btn-check.svg" alt="check">
+			<a href="#calculator" class="jobs__link" data-scroll>
+				<div class="jobs__btn btn btn--blue">
+					<div class="btn__icon">
+						<img src="img/btn-check.svg" alt="check">
+					</div>
+					<div class="btn__text">Мне интересно</div>
 				</div>
-				<div class="btn__text">Мне интересно</div>
-			</div>
-			<!-- /.btn -->
+				<!-- /.btn -->
+			</a>
 		</div>
 		<!-- /.jobs__wrap -->
 
@@ -181,7 +201,7 @@
 	</section>
 
 	<!-- Calculator -->
-	<section class="calculator">
+	<section class="calculator" id="calculator">
 	<div class="container calculator__container">
 		<h2 class="calculator__title title">Калькулятор заработка</h2>
 		<!-- /.calculator__title title -->
@@ -289,12 +309,16 @@
 			<h3 class="price-week__title">Средняя запрплата в неделю:</h3>
 			<div class="price-week__items">
 				<div class="price-week__label title-price">12.700 ₽</div>
-				<div class="price-week__btn btn btn--blue">
-					<div class="btn__icon">
-						<img src="img/help.svg" alt="help">
+
+				<a href="#getstart" class="price-week__btn-link" data-scroll>
+					<div class="price-week__btn btn btn--blue">
+						<div class="btn__icon">
+							<img src="img/help.svg" alt="help">
+						</div>
+						Как начать?
 					</div>
-					Как начать?
-				</div>
+				</a>
+
 			</div>
 		</div>
 		<!-- /.price-week -->
@@ -304,34 +328,9 @@
 </section>
 <!-- /.calculator -->
 
-	<div class="social-plash">
-	<div class="social-item">
-		<div class="social-item__img">
-			<svg>
-				<use xlink:href="img/icons/sprite.svg#telegram"></use>
-			</svg>
-		</div>
-	</div>
-	<div class="social-item">
-		<div class="social-item__img">
-			<svg>
-				<use xlink:href="img/icons/sprite.svg#whatsapp"></use>
-			</svg>
-		</div>
-	</div>
-	<div class="social-item">
-		<div class="social-item__img">
-			<svg>
-				<use xlink:href="img/icons/sprite.svg#phone"></use>
-			</svg>
-		</div>
-	</div>
-</div>
-<!-- /.calculator__socials -->
-
 
 	<!-- Who-is -->
-	<section class="who-is">
+	<section class="who-is" id="whois">
 	<div class="container">
 		<h2 class="who-is__title title">Кто мы</h2>
 		<!-- /.who-is__title -->
@@ -430,7 +429,7 @@
 
 
 	<!-- Vacancies -->
-	<section class="vacancies">
+	<section class="vacancies" id="vacancies">
 	<div class="container">
 		<h2 class="vacancies__title title">Наши вакансии</h2>
 		<!-- /.vacancies__title title -->
@@ -558,7 +557,7 @@
 
 
 	<!-- Why are we -->
-	<section class="why">
+	<section class="why" id="why">
 	<div class="top-bg"></div>
 	<div class="container">
 		<h2 class="why__title title">Почему выбирают нас</h2>
@@ -670,15 +669,17 @@
 				</p>
 			</div>
 			<!-- /.why__item -->
-
 		</div>
 		<!-- /.why__items -->
-		<div class="why__button btn btn--blue">
-			<div class="btn__icon">
-				<img src="img/btn-check.svg" alt="check">
+
+		<a href="#getstart" class="why__button-link" data-scroll>
+			<div class="why__button btn btn--blue">
+				<div class="btn__icon">
+					<img src="img/btn-check.svg" alt="check">
+				</div>
+				Хочу работать
 			</div>
-			Хочу работать
-		</div>
+		</a>
 	</div>
 	<!-- /.container -->
 </section>
@@ -686,7 +687,7 @@
 
 
 	<!-- Get started -->
-	<section class="getstart">
+	<section class="getstart" id="getstart">
 	<div class="container">
 		<h2 class="getstart__title title">Как приступить к работе?</h2>
 		<!-- /.getstart__title title -->
@@ -700,7 +701,7 @@
 				</div>
 				<p class="getstart__item-text">
 					Зарегистрируйтесь на платформе,
-					<a href="" class="getstart__item-link">заполнив анкету соискателя</a>
+					<a href="#registration" class="getstart__item-link smooth-scroll">заполнив анкету соискателя</a>
 				</p>
 			</div>
 			<!-- /.getstart__item -->
@@ -764,7 +765,7 @@
 
 
 	<!-- Safety -->
-	<section class="safety">
+	<section class="safety" id="safety">
 	<div class="container">
 		<h2 class="safety__title title">Анкеты соискателя</h2>
 		<!-- /.safety__title title -->
@@ -831,7 +832,7 @@
 
 
 	<!-- Registration -->
-	<section class="registration">
+	<section class="registration" id="registration">
 	<div class="top-bg"></div>
 	<div class="container">
 		<h2 class="registration__title title">Введите данные для автоматической регистрации по выбранной вакансии</h2>
@@ -871,57 +872,33 @@
 		<!-- /.registration__tabs -->
 
 		<div class="registration__content">
-			<div class="registration__content-item tab-item"></div>
-			<div class="registration__content-item tab-item"></div>
-			<div class="registration__content-item tab-item active">
+			<div class="registration__content-item tab-item">
 				<div class="registration__content-header">
 					<h3 class="registration__content-title">Данные водительского удостоверения</h3>
 					<p class="registration__content-subtitle">Шаг <span>1</span> из 2:</p>
 				</div>
 				<form action="#" class="registration__content-form form">
 					<div class="form__items">
-						<div class="form__item">
-							<label for="first-name">Фамилия</label>
-							<input type="text" class="form__input" id="first-name" name="first-name" placeholder="Иванов">
+						<div class="form__item item1">
+							<label for="first-name1">Фамилия</label>
+							<input type="text" class="form__input" id="first-name1" name="first-name" placeholder="Иванов">
 						</div>
-						<div class="form__item">
-							<label for="second-name">Имя</label>
-							<input type="text" class="form__input" id="second-name" name="second-name" placeholder="Иван">
+						<div class="form__item item2">
+							<label for="second-name1">Имя</label>
+							<input type="text" class="form__input" id="second-name1" name="second-name" placeholder="Иван">
 						</div>
-						<div class="form__item">
-							<label for="third-name">Отчество (не обязательно)</label>
-							<input type="text" class="form__input" id="third-name" name="third-name" placeholder="Иванович">
+						<div class="form__item item3">
+							<label for="third-name1">Отчество (не обязательно)</label>
+							<input type="text" class="form__input" id="third-name1" name="third-name" placeholder="Иванович">
 						</div>
-						<div class="form__item">
-							<label for="phone">Ваш телефон (например, +79991234567)</label>
-							<input type="text" class="form__input" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
+						<div class="form__item item4">
+							<label for="phone1">Ваш телефон (например, +79991234567)</label>
+							<input type="text" class="form__input" id="phone1" name="phone" placeholder="+7 (___) ___-__-__">
 						</div>
-						<div class="form__item">
-							<label>Ваш город</label>
-							<div class="form__dropdown dropdown" id="city">
-								<div class="dropdown__title">
-									<div class="dropdown__title-text">Москва</div>
-									<div class="dropdown__title-icon"></div>
-								</div>
-								<div class="dropdown__content">
-									<ul>
-										<li class="content__item">
-											<a href="" class="content__link">Санкт-Петербург</a>
-										</li>
-										<li class="content__item">
-											<a href="" class="content__link">Воронеж</a>
-										</li>
-										<li class="content__item">
-											<a href="" class="content__link">Ещё какой-то</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- /.dropdown -->
-						</div>
-						<div class="form__item">
+
+						<div class="form__item item5">
 							<label>Страна выдачи водительских прав</label>
-							<div class="form__dropdown dropdown" id="country">
+							<div class="form__dropdown dropdown" id="country1">
 								<div class="dropdown__title">
 									<div class="dropdown__title-text">Выбрать страну</div>
 									<div class="dropdown__title-icon"></div>
@@ -942,20 +919,20 @@
 							</div>
 							<!-- /.dropdown -->
 						</div>
-						<div class="form__item">
-							<label for="series">Сария и номер водительских прав</label>
-							<input type="text" class="form__input" id="series" name="series" placeholder="____ -____-__">
+						<div class="form__item item6">
+							<label for="series1">Серия и номер водительских прав</label>
+							<input type="text" class="form__input" id="series1" name="series" placeholder="____ -____-__">
 						</div>
-						<div class="form__item">
-							<label for="date">Дата выдачи</label>
-							<input type="text" class="form__input" id="date" name="date" placeholder="дд.мм.гг">
+						<div class="form__item item7">
+							<label for="date1">Дата выдачи</label>
+							<input type="text" class="form__input" id="date1" name="date" placeholder="дд.мм.гг">
 						</div>
 					</div>
 					<!-- /.form__items -->
 					<div class="form__submit">
 						<div class="form__consent">
-							<input type="checkbox" name="consent" id="consent">
-							<label for="consent">Я даю согласие на условия оферты</label>
+							<input type="checkbox" name="consent" id="consent1">
+							<label for="consent1">Я даю согласие на условия оферты</label>
 						</div>
 						<button class="form__button btn btn--blue" type="submit">
 							<span>
@@ -968,7 +945,200 @@
 				</form>
 				<!-- /.content__form -->
 			</div>
-			<div class="registration__content-item tab-item"></div>
+			<!-- /.registration__content-item tab-item -->
+
+			<div class="registration__content-item tab-item">
+				<div class="registration__content-header">
+					<h3 class="registration__content-title">Курьер пеший, на велосипеде или самокате</h3>
+				</div>
+				<form action="#" class="registration__content-form form ">
+					<div class="form__items walking">
+						<div class="form__item item1">
+							<label for="first-name4">Фамилия</label>
+							<input type="text" class="form__input" id="first-name4" name="first-name" placeholder="Иванов">
+						</div>
+						<div class="form__item item2">
+							<label for="second-name4">Имя</label>
+							<input type="text" class="form__input" id="second-name4" name="second-name" placeholder="Иван">
+						</div>
+						<div class="form__item item3">
+							<label for="third-name4">Отчество (не обязательно)</label>
+							<input type="text" class="form__input" id="third-name4" name="third-name" placeholder="Иванович">
+						</div>
+						<div class="form__item item4">
+							<label for="phone4">Ваш телефон (например, +79991234567)</label>
+							<input type="text" class="form__input" id="phone4" name="phone" placeholder="+7 (___) ___-__-__">
+						</div>
+						<div class="form__item item5">
+							<label for="date4">Дата рождения (например, 01-06-1994)</label>
+							<input type="text" class="form__input" id="date4" name="date" placeholder="дд.мм.гг">
+						</div>
+					</div>
+					<!-- /.form__items -->
+					<div class="form__submit">
+						<div class="form__consent">
+							<input type="checkbox" name="consent" id="consent4">
+							<label for="consent4">Я даю согласие на условия оферты</label>
+						</div>
+						<button class="form__button btn btn--blue" type="submit">
+							<span>
+								<img class="form__btn-icon" src="img/btn-check.svg" alt="check">
+							</span>
+							Подключиться
+						</button>
+					</div>
+					<!-- /.form__submit -->
+				</form>
+				<!-- /.content__form -->
+			</div>
+			<!-- /.registration__content-item tab-item -->
+
+			<div class="registration__content-item tab-item active">
+				<div class="registration__content-header">
+					<h3 class="registration__content-title">Данные водительского удостоверения</h3>
+					<p class="registration__content-subtitle">Шаг <span>1</span> из 2:</p>
+				</div>
+				<form action="#" class="registration__content-form form">
+					<div class="form__items">
+						<div class="form__item item1">
+							<label for="first-name2">Фамилия</label>
+							<input type="text" class="form__input" id="first-name2" name="first-name" placeholder="Иванов">
+						</div>
+						<div class="form__item item2">
+							<label for="second-name2">Имя</label>
+							<input type="text" class="form__input" id="second-name2" name="second-name" placeholder="Иван">
+						</div>
+						<div class="form__item item3">
+							<label for="third-name2">Отчество (не обязательно)</label>
+							<input type="text" class="form__input" id="third-name2" name="third-name" placeholder="Иванович">
+						</div>
+						<div class="form__item item4">
+							<label for="phone2">Ваш телефон (например, +79991234567)</label>
+							<input type="text" class="form__input" id="phone2" name="phone" placeholder="+7 (___) ___-__-__">
+						</div>
+						<div class="form__item item5">
+							<label>Страна выдачи водительских прав</label>
+							<div class="form__dropdown dropdown" id="country2">
+								<div class="dropdown__title">
+									<div class="dropdown__title-text">Выбрать страну</div>
+									<div class="dropdown__title-icon"></div>
+								</div>
+								<div class="dropdown__content">
+									<ul>
+										<li class="content__item">
+											<a href="" class="content__link">Россия</a>
+										</li>
+										<li class="content__item">
+											<a href="" class="content__link">Украина</a>
+										</li>
+										<li class="content__item">
+											<a href="" class="content__link">Ещё какая-то</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- /.dropdown -->
+						</div>
+						<div class="form__item item6">
+							<label for="series2">Серия и номер водительских прав</label>
+							<input type="text" class="form__input" id="series2" name="series" placeholder="____ -____-__">
+						</div>
+						<div class="form__item item7">
+							<label for="date2">Дата выдачи</label>
+							<input type="text" class="form__input" id="date2" name="date" placeholder="дд.мм.гг">
+						</div>
+					</div>
+					<!-- /.form__items -->
+					<div class="form__submit">
+						<div class="form__consent">
+							<input type="checkbox" name="consent" id="consent2">
+							<label for="consent2">Я даю согласие на условия оферты</label>
+						</div>
+						<button class="form__button btn btn--blue" type="submit">
+							<span>
+								<img class="form__btn-icon" src="img/btn-check.svg" alt="check">
+							</span>
+							Подключиться
+						</button>
+					</div>
+					<!-- /.form__submit -->
+				</form>
+				<!-- /.content__form -->
+			</div>
+			<!-- /.registration__content-item tab-item -->
+
+			<div class="registration__content-item tab-item">
+				<div class="registration__content-header">
+					<h3 class="registration__content-title">Данные водительского удостоверения</h3>
+					<p class="registration__content-subtitle">Шаг <span>1</span> из 2:</p>
+				</div>
+				<form action="#" class="registration__content-form form">
+					<div class="form__items">
+						<div class="form__item item1">
+							<label for="first-name3">Фамилия</label>
+							<input type="text" class="form__input" id="first-name3" name="first-name" placeholder="Иванов">
+						</div>
+						<div class="form__item item2">
+							<label for="second-name3">Имя</label>
+							<input type="text" class="form__input" id="second-name3" name="second-name" placeholder="Иван">
+						</div>
+						<div class="form__item item3">
+							<label for="third-name3">Отчество (не обязательно)</label>
+							<input type="text" class="form__input" id="third-name3" name="third-name" placeholder="Иванович">
+						</div>
+						<div class="form__item item4">
+							<label for="phone3">Ваш телефон (например, +79991234567)</label>
+							<input type="text" class="form__input" id="phone3" name="phone" placeholder="+7 (___) ___-__-__">
+						</div>
+						<div class="form__item item5">
+							<label>Страна выдачи водительских прав</label>
+							<div class="form__dropdown dropdown" id="country3">
+								<div class="dropdown__title">
+									<div class="dropdown__title-text">Выбрать страну</div>
+									<div class="dropdown__title-icon"></div>
+								</div>
+								<div class="dropdown__content">
+									<ul>
+										<li class="content__item">
+											<a href="" class="content__link">Россия</a>
+										</li>
+										<li class="content__item">
+											<a href="" class="content__link">Украина</a>
+										</li>
+										<li class="content__item">
+											<a href="" class="content__link">Ещё какая-то</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- /.dropdown -->
+						</div>
+						<div class="form__item item6">
+							<label for="series3">Серия и номер водительских прав</label>
+							<input type="text" class="form__input" id="series3" name="series" placeholder="____ -____-__">
+						</div>
+						<div class="form__item item7">
+							<label for="date3">Дата выдачи</label>
+							<input type="text" class="form__input" id="date3" name="date" placeholder="дд.мм.гг">
+						</div>
+					</div>
+					<!-- /.form__items -->
+					<div class="form__submit">
+						<div class="form__consent">
+							<input type="checkbox" name="consent" id="consent3">
+							<label for="consent3">Я даю согласие на условия оферты</label>
+						</div>
+						<button class="form__button btn btn--blue" type="submit">
+							<span>
+								<img class="form__btn-icon" src="img/btn-check.svg" alt="check">
+							</span>
+							Подключиться
+						</button>
+					</div>
+					<!-- /.form__submit -->
+				</form>
+				<!-- /.content__form -->
+			</div>
 		</div>
 		<!-- /.registration__content -->
 	</div>
@@ -1177,7 +1347,7 @@
 </section>
 <!-- /.review -->
 
-	<section class="helper">
+	<section class="helper" id="helper">
 	<div class="container">
 		<div class="helper__card card">
 			<div class="card__wrap">
@@ -1219,7 +1389,7 @@
 	<div class="footer__top">
 		<div class="container">
 			<div class="footer__top-wrap">
-				<a href="" class="logo-link">
+				<a href="#header" class="logo-link" data-scroll>
 					<div class="footer__logo logo">
 						<img src="img/courier.png" alt="courier" class="logo__img">
 						<div class="logo__text">
@@ -1281,8 +1451,8 @@
 		<div class="container">
 			<div class="footer__bottom-wrap">
 				<p class="footer__bottom-text">
-					2021 Курьер
-					Все&copy;права&nbsp;защищены
+					&copy;2021 Курьер
+					Все&nbsp;права&nbsp;защищены
 				</p>
 				<!-- /.footer__bottom-text -->
 				<p class="footer__bottom-text">
@@ -1305,6 +1475,7 @@
 
 
 
+	<script src="js/libs/smooth-scroll.polyfills.min.js"></script>
 	<script src="js/libs/swiper-bundle.min.js"></script>
 	<script src="js/script.min.js"></script>
 

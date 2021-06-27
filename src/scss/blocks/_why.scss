@@ -49,6 +49,12 @@
   }
 
   &__button {
+  }
+
+  &__button-link {
+    display: block;
+    width: 100%;
+    max-width: 285px;
     margin: 0 auto;
   }
 }

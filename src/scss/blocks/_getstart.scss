@@ -21,6 +21,35 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    &:nth-child(1)::before {
+      position: absolute;
+      content: '';
+      width: 273px;
+      height: 40px;
+      background-image: url('../img/decor.svg');
+      top: -35px;
+      right: -160px;
+    }
+    &:nth-child(2)::before {
+      position: absolute;
+      content: '';
+      width: 273px;
+      height: 40px;
+      background-image: url('../img/decor.svg');
+      bottom: 90px;
+      right: -180px;
+      transform: rotate(180deg);
+    }
+    &:nth-child(3)::before {
+      position: absolute;
+      content: '';
+      width: 273px;
+      height: 40px;
+      background-image: url('../img/decor.svg');
+      top: -40px;
+      right: -160px;
+    }
   }
 
   &__item-img {

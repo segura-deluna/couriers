@@ -1,77 +1,95 @@
-<header class="header">
+<header class="header" id="header">
   <div class="container">
-    <div class="header__wrap">
-      <a href="" class="logo-link">
-        <div class="header__logo logo">
-          <img src="img/courier.png" alt="courier" class="logo__img">
-          <div class="logo__text">
-            Курьер
-            <span>курьерская служба</span>
+    <div class="header__fixed">
+      <div class="header__wrap">
+        <a href="#header" class="logo-link" data-scroll>
+          <div class="header__logo logo">
+            <img src="img/courier.png" alt="courier" class="logo__img">
+            <div class="logo__text">
+              Курьер
+              <span>курьерская служба</span>
+            </div>
           </div>
-        </div>
-      </a>
-      <!-- /.header__logo logo -->
+        </a>
+        <!-- /.header__logo logo -->
 
-      <a href="" class="social__whatsapp">
-        <div class="social__item">
-          <div class="social__img">
-            <svg>
-              <use xlink:href="img/icons/sprite.svg#whatsapp"></use>
-            </svg>
+        <a href="" class="social__whatsapp">
+          <div class="social__item">
+            <div class="social__img">
+              <svg>
+                <use xlink:href="img/icons/sprite.svg#whatsapp"></use>
+              </svg>
+            </div>
+            <p class="social__name">WhatsApp</p>
           </div>
-          <p class="social__name">WhatsApp</p>
-        </div>
-      </a>
-      <!-- /.social__whatsapp -->
+        </a>
+        <!-- /.social__whatsapp -->
 
-      <a href="" class="social__telegram">
-        <div class="social__item">
-          <div class="social__img">
-            <svg>
-              <use xlink:href="img/icons/sprite.svg#telegram"></use>
-            </svg>
+        <a href="" class="social__telegram">
+          <div class="social__item">
+            <div class="social__img">
+              <svg>
+                <use xlink:href="img/icons/sprite.svg#telegram"></use>
+              </svg>
+            </div>
+            <p class="social__name">Telegram</p>
           </div>
-          <p class="social__name">Telegram</p>
-        </div>
-      </a>
-      <!-- /.social__telegramm -->
+        </a>
+        <!-- /.social__telegramm -->
 
-      <div class="header__telephone telephone">+7 (999) 545-58-79</div>
-      <!-- /.header__telephone telephone -->
-      <div class="header__dropdown dropdown">
-        <div class="dropdown__title">
-          <div class="dropdown__title-text">Помощь</div>
-          <div class="dropdown__title-icon"></div>
+        <div class="header__telephone telephone">+7 (999) 545-58-79</div>
+        <!-- /.header__telephone telephone -->
+        <div class="header__dropdown dropdown">
+          <div class="dropdown__title">
+            <div class="dropdown__title-text">Помощь</div>
+            <div class="dropdown__title-icon"></div>
+          </div>
+          <!-- /.dropdown__title -->
+          <div class="dropdown__content">
+            <ul>
+              <li class="content__item">
+                <a href="" class="content__link">Чат WhatsApp</a>
+              </li>
+              <li class="content__item">
+                <a href="" class="content__link">Чат Telegram</a>
+              </li>
+              <li class="content__item">
+                <a href="#registration" class="content__link" data-scroll>Анкета</a>
+              </li>
+              <li class="content__item">
+                <a href="#calculator" class="content__link" data-scroll>Калькулятор</a>
+              </li>
+              <li class="content__item">
+                <a href="#vacancies" class="content__link" data-scroll>Наши вакансии</a>
+              </li>
+              <li class="content__item">
+                <a href="#whois" class="content__link" data-scroll>Кто мы</a>
+              </li>
+              <li class="content__item">
+                <a href="#why" class="content__link" data-scroll>Почему мы</a>
+              </li>
+              <li class="content__item">
+                <a href="" class="content__link">Инструкция</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.dropdown__content -->
         </div>
-        <!-- /.dropdown__title -->
-        <div class="dropdown__content">
-          <ul>
-            <li class="content__item">
-              <a href="" class="content__link">Чат WhatsApp</a>
-            </li>
-            <li class="content__item">
-              <a href="" class="content__link">Чат Telegram</a>
-            </li>
-            <li class="content__item">
-              <a href="" class="content__link">Ещё какой-то</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.dropdown__content -->
+        <!-- /.header__dropdown dropdown -->
       </div>
-      <!-- /.header__dropdown dropdown -->
+      <!-- /.header__wrap -->
     </div>
-    <!-- /.header__wrap -->
+    <!-- /.header__fixed -->
 
     <div class="header__nav navigation">
       <nav class="navigation__list">
-        <a href="" class="navigation__link">Кто мы</a>
-        <a href="" class="navigation__link">Наши вакансии</a>
-        <a href="" class="navigation__link">Почему мы</a>
-        <a href="" class="navigation__link">Калькулятор</a>
-        <a href="" class="navigation__link">Как приступить к работе</a>
-        <a href="" class="navigation__link">Анкета</a>
-        <a href="" class="navigation__link">Контакты</a>
+        <a href="#whois" class="navigation__link" data-scroll>Кто мы</a>
+        <a href="#vacancies" class="navigation__link" data-scroll>Наши вакансии</a>
+        <a href="#why" class="navigation__link" data-scroll>Почему мы</a>
+        <a href="#calculator" class="navigation__link" data-scroll>Калькулятор</a>
+        <a href="#getstart" class="navigation__link" data-scroll>Как приступить к работе</a>
+        <a href="#registration" class="navigation__link" data-scroll>Анкета</a>
+        <a href="#helper" class="navigation__link" data-scroll>Контакты</a>
       </nav>
     </div>
     <!-- /.header__nav -->

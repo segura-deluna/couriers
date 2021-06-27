@@ -1,11 +1,54 @@
 .form {
   &__items {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 30px;
     padding-top: 40px;
     margin-bottom: 90px;
+    & .item1 {
+      grid-area: 1 / 1 / 2 / 4;
+    }
+    & .item2 {
+      grid-area: 1 / 4 / 2 / 7;
+    }
+    & .item3 {
+      grid-area: 1 / 7 / 2 / 10;
+    }
+    & .item4 {
+      grid-area: 1 / 10 / 2 / 13;
+    }
+    & .item5 {
+      grid-area: 2 / 1 / 3 / 5;
+    }
+    & .item6 {
+      grid-area: 2 / 5 / 3 / 9;
+    }
+    & .item7 {
+      grid-area: 2 / 9 / 3 / 13;
+    }
+  }
+
+  &__items.walking {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    & .item1 {
+      grid-area: 1 / 1 / 2 / 4;
+    }
+    & .item2 {
+      grid-area: 1 / 4 / 2 / 7;
+    }
+    & .item3 {
+      grid-area: 1 / 7 / 2 / 10;
+    }
+    & .item4 {
+      grid-area: 1 / 10 / 2 / 13;
+    }
+    & .item5 {
+      grid-area: 2 /4 / 2 / 10;
+    }
   }
 
   &__item {
@@ -27,7 +70,7 @@
 
   &__input {
     width: 100%;
-    max-width: 285px;
+    // max-width: 285px;
     height: 60px;
     background: $white;
     font-weight: normal;
@@ -47,7 +90,7 @@
 
   &__dropdown {
     width: 100%;
-    max-width: 285px;
+    // max-width: 285px;
     height: 60px;
     background: $white;
     font-weight: normal;

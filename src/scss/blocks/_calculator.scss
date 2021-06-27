@@ -67,6 +67,9 @@
     text-transform: uppercase;
   }
 
-  &__btn {
+  &__btn-link {
+    display: inline-block;
+    width: 100%;
+    max-width: 285px;
   }
 }
