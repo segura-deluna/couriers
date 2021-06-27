@@ -1,11 +1,13 @@
 .header {
-  padding-top: 95px;
-  &__fixed {
+  // * Top Header =============
+  & .top-header.sticky {
     position: fixed;
     top: 0;
-    z-index: 10;
+    transition: transform 0.8s ease-in-out;
+    z-index: 20;
+    background: $white;
     width: 100%;
-    max-width: 1230px;
+    box-shadow: 0px 15px 30px 0 rgba(40, 74, 183, 0.2);
   }
 
   &__wrap {
@@ -13,7 +15,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: $white;
     padding: 25px 2px;
   }
 
@@ -84,12 +85,36 @@
     display: inline-block;
     width: 100%;
     max-width: 130px;
+    &:hover {
+      & .whatsapp {
+        fill: $scremgreen;
+      }
+      & .social__name {
+        color: $royalblue;
+      }
+    }
+    & .whatsapp {
+      fill: $esmerald;
+      transition: fill 0.3s ease-in-out;
+    }
   }
 
   &__telegram {
     display: inline-block;
     width: 100%;
     max-width: 120px;
+    &:hover {
+      & .telegram {
+        fill: $cerulean;
+      }
+      & .social__name {
+        color: $royalblue;
+      }
+    }
+    & .telegram {
+      fill: $lochmara;
+      transition: fill 0.3s ease-in-out;
+    }
   }
 
   &__item {
@@ -109,6 +134,7 @@
     font-weight: 400;
     font-size: 1.6rem;
     color: $mako;
+    transition: color 0.3s ease-in-out;
   }
 }
 

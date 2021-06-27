@@ -4,20 +4,8 @@
     padding: 40px 0 43px;
 
     & .social {
-      &__whatsapp {
-      }
-
-      &__item {
-      }
-
-      &__img {
-      }
-
       &__name {
         color: $white;
-      }
-
-      &__telegram {
       }
     }
 
@@ -83,6 +71,18 @@
   display: inline-block;
   width: 100%;
   max-width: 115px;
+  &:hover {
+    & .offer {
+      fill: $cerulean;
+    }
+    & .offer__name {
+      color: $royalblue;
+    }
+  }
+  & .offer {
+    fill: $royalblue;
+    transition: fill 0.3s ease-in-out;
+  }
 
   &__item {
     display: flex;
@@ -101,5 +101,6 @@
     font-weight: 400;
     font-size: 1.6rem;
     color: $white;
+    transition: color 0.3s ease-in-out;
   }
 }

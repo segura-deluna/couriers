@@ -54,6 +54,12 @@ svg {
   margin: 0 auto;
 }
 
+.hidden {
+  position: absolute;
+  transform: translateY(-300px);
+  transition: transform 1s ease-in-out;
+}
+
 .first-screen {
   width: 100%;
   background-image: url('../img/header-bg.jpg');

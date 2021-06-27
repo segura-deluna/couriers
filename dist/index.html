@@ -29,8 +29,9 @@
 
 		<!--	HEADER -->
 		<header class="header" id="header">
-  <div class="container">
-    <div class="header__fixed">
+
+  <div class="top-header hidden" id="topHeader">
+    <div class="container">
       <div class="header__wrap">
         <a href="#header" class="logo-link" data-scroll>
           <div class="header__logo logo">
@@ -46,7 +47,7 @@
         <a href="" class="social__whatsapp">
           <div class="social__item">
             <div class="social__img">
-              <svg>
+              <svg class="whatsapp">
                 <use xlink:href="img/icons/sprite.svg#whatsapp"></use>
               </svg>
             </div>
@@ -58,7 +59,7 @@
         <a href="" class="social__telegram">
           <div class="social__item">
             <div class="social__img">
-              <svg>
+              <svg class="telegram">
                 <use xlink:href="img/icons/sprite.svg#telegram"></use>
               </svg>
             </div>
@@ -72,7 +73,11 @@
         <div class="header__dropdown dropdown">
           <div class="dropdown__title">
             <div class="dropdown__title-text">Помощь</div>
-            <div class="dropdown__title-icon"></div>
+            <div class="dropdown__title-icon">
+              <svg>
+                <use xlink:href="img/icons/sprite.svg#chevron"></use>
+              </svg>
+            </div>
           </div>
           <!-- /.dropdown__title -->
           <div class="dropdown__content">
@@ -109,7 +114,92 @@
       </div>
       <!-- /.header__wrap -->
     </div>
-    <!-- /.header__fixed -->
+    <!-- /.container -->
+  </div>
+
+
+  <div class="container">
+    <div class="header__wrap">
+      <a href="#header" class="logo-link" data-scroll>
+        <div class="header__logo logo">
+          <img src="img/courier.png" alt="courier" class="logo__img">
+          <div class="logo__text">
+            Курьер
+            <span>курьерская служба</span>
+          </div>
+        </div>
+      </a>
+      <!-- /.header__logo logo -->
+
+      <a href="" class="social__whatsapp">
+        <div class="social__item">
+          <div class="social__img">
+            <svg class="whatsapp">
+              <use xlink:href="img/icons/sprite.svg#whatsapp"></use>
+            </svg>
+          </div>
+          <p class="social__name">WhatsApp</p>
+        </div>
+      </a>
+      <!-- /.social__whatsapp -->
+
+      <a href="" class="social__telegram">
+        <div class="social__item">
+          <div class="social__img">
+            <svg class="telegram">
+              <use xlink:href="img/icons/sprite.svg#telegram"></use>
+            </svg>
+          </div>
+          <p class="social__name">Telegram</p>
+        </div>
+      </a>
+      <!-- /.social__telegramm -->
+
+      <div class="header__telephone telephone">+7 (999) 545-58-79</div>
+      <!-- /.header__telephone telephone -->
+      <div class="header__dropdown dropdown">
+        <div class="dropdown__title">
+          <div class="dropdown__title-text">Помощь</div>
+          <div class="dropdown__title-icon">
+            <svg>
+              <use xlink:href="img/icons/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+        </div>
+        <!-- /.dropdown__title -->
+        <div class="dropdown__content">
+          <ul>
+            <li class="content__item">
+              <a href="" class="content__link">Чат WhatsApp</a>
+            </li>
+            <li class="content__item">
+              <a href="" class="content__link">Чат Telegram</a>
+            </li>
+            <li class="content__item">
+              <a href="#registration" class="content__link" data-scroll>Анкета</a>
+            </li>
+            <li class="content__item">
+              <a href="#calculator" class="content__link" data-scroll>Калькулятор</a>
+            </li>
+            <li class="content__item">
+              <a href="#vacancies" class="content__link" data-scroll>Наши вакансии</a>
+            </li>
+            <li class="content__item">
+              <a href="#whois" class="content__link" data-scroll>Кто мы</a>
+            </li>
+            <li class="content__item">
+              <a href="#why" class="content__link" data-scroll>Почему мы</a>
+            </li>
+            <li class="content__item">
+              <a href="" class="content__link">Инструкция</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.dropdown__content -->
+      </div>
+      <!-- /.header__dropdown dropdown -->
+    </div>
+    <!-- /.header__wrap -->
 
     <div class="header__nav navigation">
       <nav class="navigation__list">
@@ -208,10 +298,14 @@
 		<div class="calculator__items">
 			<div class="calculator__item">
 				<p class="calculator__name">Выбрать вакансию</p>
-				<div class="calculator__dropdown dropdown">
+				<div class="calculator__dropdown dropdown dropdown--white">
 					<div class="dropdown__title">
 						<div class="dropdown__title-text">Выбрать вакансию</div>
-						<div class="dropdown__title-icon"></div>
+						<div class="dropdown__title-icon">
+							<svg>
+								<use xlink:href="img/icons/sprite.svg#chevron"></use>
+							</svg>
+						</div>
 					</div>
 					<!-- /.dropdown__title -->
 					<div class="dropdown__content">
@@ -232,10 +326,14 @@
 			</div>
 			<div class="calculator__item">
 				<p class="calculator__name">Рабочих дней в неделю</p>
-				<div class="calculator__dropdown dropdown">
+				<div class="calculator__dropdown dropdown dropdown--white">
 					<div class="dropdown__title">
 						<div class="dropdown__title-text">0 дней</div>
-						<div class="dropdown__title-icon"></div>
+						<div class="dropdown__title-icon">
+							<svg>
+								<use xlink:href="img/icons/sprite.svg#chevron"></use>
+							</svg>
+						</div>
 					</div>
 					<!-- /.dropdown__title -->
 					<div class="dropdown__content">
@@ -256,10 +354,14 @@
 			</div>
 			<div class="calculator__item">
 				<p class="calculator__name">Термокороб</p>
-				<div class="calculator__dropdown dropdown">
+				<div class="calculator__dropdown dropdown dropdown--white">
 					<div class="dropdown__title">
 						<div class="dropdown__title-text">Кажите наличие короба</div>
-						<div class="dropdown__title-icon"></div>
+						<div class="dropdown__title-icon">
+							<svg>
+								<use xlink:href="img/icons/sprite.svg#chevron"></use>
+							</svg>
+						</div>
 					</div>
 					<!-- /.dropdown__title -->
 					<div class="dropdown__content">
@@ -280,10 +382,14 @@
 			</div>
 			<div class="calculator__item">
 				<p class="calculator__name">Население в городе</p>
-				<div class="calculator__dropdown dropdown">
+				<div class="calculator__dropdown dropdown dropdown--white">
 					<div class="dropdown__title">
 						<div class="dropdown__title-text">Указать город</div>
-						<div class="dropdown__title-icon"></div>
+						<div class="dropdown__title-icon">
+							<svg>
+								<use xlink:href="img/icons/sprite.svg#chevron"></use>
+							</svg>
+						</div>
 					</div>
 					<!-- /.dropdown__title -->
 					<div class="dropdown__content">
@@ -384,28 +490,28 @@
 				<div class="clients__wrapper swiper-wrapper">
 					<!-- Slides -->
 					<div class="clients__slide swiper-slide">
-						<img src="img/slide-1.jpg" alt="eldorado" class="clients__slide-img">
+						<img src="img/slide-1.svg" alt="eldorado" class="clients__slide-img">
 					</div>
 					<div class="clients__slide swiper-slide">
-						<img src="img/slide-2.jpg" alt="merlen" class="clients__slide-img">
+						<img src="img/slide-2.svg" alt="merlen" class="clients__slide-img">
 					</div>
 					<div class="clients__slide swiper-slide">
-						<img src="img/slide-3.jpg" alt="mvideo" class="clients__slide-img">
+						<img src="img/slide-3.svg" alt="mvideo" class="clients__slide-img">
 					</div>
 					<div class="clients__slide swiper-slide">
-						<img src="img/slide-4.jpg" alt="baucenter" class="clients__slide-img">
+						<img src="img/slide-4.svg" alt="baucenter" class="clients__slide-img">
 					</div>
 					<div class="clients__slide swiper-slide">
-						<img src="img/slide-1.jpg" alt="eldorado" class="clients__slide-img">
+						<img src="img/slide-1.svg" alt="eldorado" class="clients__slide-img">
 					</div>
 					<div class="clients__slide swiper-slide">
-						<img src="img/slide-2.jpg" alt="merlen" class="clients__slide-img">
+						<img src="img/slide-2.svg" alt="merlen" class="clients__slide-img">
 					</div>
 					<div class="clients__slide swiper-slide">
-						<img src="img/slide-3.jpg" alt="mvideo" class="clients__slide-img">
+						<img src="img/slide-3.svg" alt="mvideo" class="clients__slide-img">
 					</div>
 					<div class="clients__slide swiper-slide">
-						<img src="img/slide-4.jpg" alt="baucenter" class="clients__slide-img">
+						<img src="img/slide-4.svg" alt="baucenter" class="clients__slide-img">
 					</div>
 				</div>
 			</div>
@@ -897,10 +1003,14 @@
 						</div>
 						<div class="form__item item5">
 							<label>Страна выдачи водительских прав</label>
-							<div class="form__dropdown dropdown" id="country1">
+							<div class="form__dropdown dropdown dropdown--white" id="country1">
 								<div class="dropdown__title">
 									<div class="dropdown__title-text">Выбрать страну</div>
-									<div class="dropdown__title-icon"></div>
+									<div class="dropdown__title-icon">
+										<svg>
+											<use xlink:href="img/icons/sprite.svg#chevron"></use>
+										</svg>
+									</div>
 								</div>
 								<div class="dropdown__content">
 									<ul>
@@ -931,10 +1041,14 @@
 					<div class="form__items step2">
 						<div class="form__item item1">
 							<label for="mark1">Марка</label>
-							<div class="form__dropdown dropdown" id="mark1">
+							<div class="form__dropdown dropdown dropdown--white" id="mark1">
 								<div class="dropdown__title">
 									<div class="dropdown__title-text">Выбрать марку</div>
-									<div class="dropdown__title-icon"></div>
+									<div class="dropdown__title-icon">
+										<svg>
+											<use xlink:href="img/icons/sprite.svg#chevron"></use>
+										</svg>
+									</div>
 								</div>
 								<div class="dropdown__content">
 									<ul>
@@ -958,10 +1072,14 @@
 						</div>
 						<div class="form__item item3">
 							<label for="color1">Цвет</label>
-							<div class="form__dropdown dropdown" id="color1">
+							<div class="form__dropdown dropdown dropdown--white" id="color1">
 								<div class="dropdown__title">
 									<div class="dropdown__title-text">Выбрать цвет</div>
-									<div class="dropdown__title-icon"></div>
+									<div class="dropdown__title-icon">
+										<svg>
+											<use xlink:href="img/icons/sprite.svg#chevron"></use>
+										</svg>
+									</div>
 								</div>
 								<div class="dropdown__content">
 									<ul>
@@ -1086,10 +1204,14 @@
 						</div>
 						<div class="form__item item5">
 							<label>Страна выдачи водительских прав</label>
-							<div class="form__dropdown dropdown" id="country2">
+							<div class="form__dropdown dropdown dropdown--white" id="country2">
 								<div class="dropdown__title">
 									<div class="dropdown__title-text">Выбрать страну</div>
-									<div class="dropdown__title-icon"></div>
+									<div class="dropdown__title-icon">
+										<svg>
+											<use xlink:href="img/icons/sprite.svg#chevron"></use>
+										</svg>
+									</div>
 								</div>
 								<div class="dropdown__content">
 									<ul>
@@ -1120,10 +1242,14 @@
 					<div class="form__items step2">
 						<div class="form__item item1">
 							<label for="mark2">Марка</label>
-							<div class="form__dropdown dropdown" id="mark2">
+							<div class="form__dropdown dropdown dropdown--white" id="mark2">
 								<div class="dropdown__title">
 									<div class="dropdown__title-text">Выбрать марку</div>
-									<div class="dropdown__title-icon"></div>
+									<div class="dropdown__title-icon">
+										<svg>
+											<use xlink:href="img/icons/sprite.svg#chevron"></use>
+										</svg>
+									</div>
 								</div>
 								<div class="dropdown__content">
 									<ul>
@@ -1147,10 +1273,14 @@
 						</div>
 						<div class="form__item item3">
 							<label for="color2">Цвет</label>
-							<div class="form__dropdown dropdown" id="color2">
+							<div class="form__dropdown dropdown dropdown--white" id="color2">
 								<div class="dropdown__title">
 									<div class="dropdown__title-text">Выбрать цвет</div>
-									<div class="dropdown__title-icon"></div>
+									<div class="dropdown__title-icon">
+										<svg>
+											<use xlink:href="img/icons/sprite.svg#chevron"></use>
+										</svg>
+									</div>
 								</div>
 								<div class="dropdown__content">
 									<ul>
@@ -1186,6 +1316,7 @@
 						</div>
 					</div>
 					<!-- /.form__items step2-->
+
 					<div class="form__submit">
 						<div class="form__consent">
 							<input type="checkbox" name="consent" id="consent2">
@@ -1229,10 +1360,14 @@
 						</div>
 						<div class="form__item item5">
 							<label>Страна выдачи водительских прав</label>
-							<div class="form__dropdown dropdown" id="country3">
+							<div class="form__dropdown dropdown dropdown--white" id="country3">
 								<div class="dropdown__title">
 									<div class="dropdown__title-text">Выбрать страну</div>
-									<div class="dropdown__title-icon"></div>
+									<div class="dropdown__title-icon">
+										<svg>
+											<use xlink:href="img/icons/sprite.svg#chevron"></use>
+										</svg>
+									</div>
 								</div>
 								<div class="dropdown__content">
 									<ul>
@@ -1264,10 +1399,14 @@
 					<div class="form__items truck step2">
 						<div class="form__item item1">
 							<label for="mark3">Марка</label>
-							<div class="form__dropdown dropdown" id="mark3">
+							<div class="form__dropdown dropdown dropdown--white" id="mark3">
 								<div class="dropdown__title">
 									<div class="dropdown__title-text">Выбрать марку</div>
-									<div class="dropdown__title-icon"></div>
+									<div class="dropdown__title-icon">
+										<svg>
+											<use xlink:href="img/icons/sprite.svg#chevron"></use>
+										</svg>
+									</div>
 								</div>
 								<div class="dropdown__content">
 									<ul>
@@ -1291,10 +1430,14 @@
 						</div>
 						<div class="form__item item3">
 							<label for="color3">Цвет</label>
-							<div class="form__dropdown dropdown" id="color3">
+							<div class="form__dropdown dropdown dropdown--white" id="color3">
 								<div class="dropdown__title">
 									<div class="dropdown__title-text">Выбрать цвет</div>
-									<div class="dropdown__title-icon"></div>
+									<div class="dropdown__title-icon">
+										<svg>
+											<use xlink:href="img/icons/sprite.svg#chevron"></use>
+										</svg>
+									</div>
 								</div>
 								<div class="dropdown__content">
 									<ul>
@@ -1321,7 +1464,7 @@
 							<input type="text" class="form__input" id="number3" name="number" placeholder="А333РР777 или АА12345">
 						</div>
 						<div class="form__item item6">
-							<label for="vin3">VIN или номер кузова<br> (для проверки авто на&nbsp;угон)</label>
+							<label for="vin3">VIN или номер кузова<br> (для&nbsp;проверки&nbsp;на&nbsp;угон)</label>
 							<input type="text" class="form__input" id="vin3" name="vin" placeholder="VW123GPDRMF123456">
 						</div>
 						<div class="form__item item7">
@@ -1352,8 +1495,8 @@
 					<!-- /.form__items step2-->
 					<div class="form__submit">
 						<div class="form__consent">
-							<input type="checkbox" name="consent" id="consent3">
 							<label for="consent3">Я даю согласие на условия оферты</label>
+							<input type="checkbox" name="consent" id="consent3">
 						</div>
 						<button class="form__button btn btn--blue" type="submit">
 							<span>
@@ -1395,7 +1538,7 @@
 					<div class="review__item swiper-slide">
 						<div class="review__card card">
 							<div class="card__img-front">
-								<img src="img/play.png" alt="play">
+								<img src="img/play.svg" alt="play">
 							</div>
 							<div class="card__wrap">
 								<div class="card__images">
@@ -1420,7 +1563,7 @@
 					<div class="review__item swiper-slide">
 						<div class="review__card card">
 							<div class="card__img-front">
-								<img src="img/play.png" alt="play">
+								<img src="img/play.svg" alt="play">
 							</div>
 							<div class="card__wrap">
 								<div class="card__images">
@@ -1445,7 +1588,7 @@
 					<div class="review__item swiper-slide">
 						<div class="review__card card">
 							<div class="card__img-front">
-								<img src="img/play.png" alt="play">
+								<img src="img/play.svg" alt="play">
 							</div>
 							<div class="card__wrap">
 								<div class="card__images">
@@ -1470,7 +1613,7 @@
 					<div class="review__item swiper-slide">
 						<div class="review__card card">
 							<div class="card__img-front">
-								<img src="img/play.png" alt="play">
+								<img src="img/play.svg" alt="play">
 							</div>
 							<div class="card__wrap">
 								<div class="card__images">
@@ -1495,7 +1638,7 @@
 					<div class="review__item swiper-slide">
 						<div class="review__card card">
 							<div class="card__img-front">
-								<img src="img/play.png" alt="play">
+								<img src="img/play.svg" alt="play">
 							</div>
 							<div class="card__wrap">
 								<div class="card__images">
@@ -1520,7 +1663,7 @@
 					<div class="review__item swiper-slide">
 						<div class="review__card card">
 							<div class="card__img-front">
-								<img src="img/play.png" alt="play">
+								<img src="img/play.svg" alt="play">
 							</div>
 							<div class="card__wrap">
 								<div class="card__images">
@@ -1630,7 +1773,7 @@
 				<a href="" class="offer">
 					<div class="offer__item">
 						<div class="offer__img">
-							<svg>
+							<svg class="offer">
 								<use xlink:href="img/icons/sprite.svg#offer"></use>
 							</svg>
 						</div>
@@ -1643,7 +1786,7 @@
 				<a href="" class="social__whatsapp">
 					<div class="social__item">
 						<div class="social__img">
-							<svg>
+							<svg class="whatsapp">
 								<use xlink:href="img/icons/sprite.svg#whatsapp"></use>
 							</svg>
 						</div>
@@ -1655,7 +1798,7 @@
 				<a href="" class="social__telegram">
 					<div class="social__item">
 						<div class="social__img">
-							<svg>
+							<svg class="telegram">
 								<use xlink:href="img/icons/sprite.svg#telegram"></use>
 							</svg>
 						</div>

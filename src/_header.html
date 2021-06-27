@@ -1,6 +1,7 @@
 <header class="header" id="header">
-  <div class="container">
-    <div class="header__fixed">
+
+  <div class="top-header hidden" id="topHeader">
+    <div class="container">
       <div class="header__wrap">
         <a href="#header" class="logo-link" data-scroll>
           <div class="header__logo logo">
@@ -16,7 +17,7 @@
         <a href="" class="social__whatsapp">
           <div class="social__item">
             <div class="social__img">
-              <svg>
+              <svg class="whatsapp">
                 <use xlink:href="img/icons/sprite.svg#whatsapp"></use>
               </svg>
             </div>
@@ -28,7 +29,7 @@
         <a href="" class="social__telegram">
           <div class="social__item">
             <div class="social__img">
-              <svg>
+              <svg class="telegram">
                 <use xlink:href="img/icons/sprite.svg#telegram"></use>
               </svg>
             </div>
@@ -42,7 +43,11 @@
         <div class="header__dropdown dropdown">
           <div class="dropdown__title">
             <div class="dropdown__title-text">Помощь</div>
-            <div class="dropdown__title-icon"></div>
+            <div class="dropdown__title-icon">
+              <svg>
+                <use xlink:href="img/icons/sprite.svg#chevron"></use>
+              </svg>
+            </div>
           </div>
           <!-- /.dropdown__title -->
           <div class="dropdown__content">
@@ -79,7 +84,92 @@
       </div>
       <!-- /.header__wrap -->
     </div>
-    <!-- /.header__fixed -->
+    <!-- /.container -->
+  </div>
+
+
+  <div class="container">
+    <div class="header__wrap">
+      <a href="#header" class="logo-link" data-scroll>
+        <div class="header__logo logo">
+          <img src="img/courier.png" alt="courier" class="logo__img">
+          <div class="logo__text">
+            Курьер
+            <span>курьерская служба</span>
+          </div>
+        </div>
+      </a>
+      <!-- /.header__logo logo -->
+
+      <a href="" class="social__whatsapp">
+        <div class="social__item">
+          <div class="social__img">
+            <svg class="whatsapp">
+              <use xlink:href="img/icons/sprite.svg#whatsapp"></use>
+            </svg>
+          </div>
+          <p class="social__name">WhatsApp</p>
+        </div>
+      </a>
+      <!-- /.social__whatsapp -->
+
+      <a href="" class="social__telegram">
+        <div class="social__item">
+          <div class="social__img">
+            <svg class="telegram">
+              <use xlink:href="img/icons/sprite.svg#telegram"></use>
+            </svg>
+          </div>
+          <p class="social__name">Telegram</p>
+        </div>
+      </a>
+      <!-- /.social__telegramm -->
+
+      <div class="header__telephone telephone">+7 (999) 545-58-79</div>
+      <!-- /.header__telephone telephone -->
+      <div class="header__dropdown dropdown">
+        <div class="dropdown__title">
+          <div class="dropdown__title-text">Помощь</div>
+          <div class="dropdown__title-icon">
+            <svg>
+              <use xlink:href="img/icons/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+        </div>
+        <!-- /.dropdown__title -->
+        <div class="dropdown__content">
+          <ul>
+            <li class="content__item">
+              <a href="" class="content__link">Чат WhatsApp</a>
+            </li>
+            <li class="content__item">
+              <a href="" class="content__link">Чат Telegram</a>
+            </li>
+            <li class="content__item">
+              <a href="#registration" class="content__link" data-scroll>Анкета</a>
+            </li>
+            <li class="content__item">
+              <a href="#calculator" class="content__link" data-scroll>Калькулятор</a>
+            </li>
+            <li class="content__item">
+              <a href="#vacancies" class="content__link" data-scroll>Наши вакансии</a>
+            </li>
+            <li class="content__item">
+              <a href="#whois" class="content__link" data-scroll>Кто мы</a>
+            </li>
+            <li class="content__item">
+              <a href="#why" class="content__link" data-scroll>Почему мы</a>
+            </li>
+            <li class="content__item">
+              <a href="" class="content__link">Инструкция</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.dropdown__content -->
+      </div>
+      <!-- /.header__dropdown dropdown -->
+    </div>
+    <!-- /.header__wrap -->
 
     <div class="header__nav navigation">
       <nav class="navigation__list">

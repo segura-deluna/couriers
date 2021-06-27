@@ -1,5 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
   //
+  //* Header-navbar ============
+  window.onscroll = () => {
+    const header = document.getElementById('topHeader');
+    const sticky = header.offsetTop;
+
+    const myFunction = () => {
+      if (window.pageYOffset >= sticky + 150 || window.innerWidth <= 1025) {
+        header.classList.remove('hidden');
+        header.classList.add('sticky');
+      } else {
+        header.classList.remove('sticky');
+        header.classList.add('hidden');
+      }
+    };
+    myFunction();
+  };
+  //
   // * Smooth-scroll ================
   var scroll = new SmoothScroll('a[href*="#"]', {
     speed: 300,
@@ -12,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     watchSlidesProgress: true,
     watchSlidesVisibility: true,
     slidesPerView: 4,
-    loop: false,
+    loop: true,
     navigation: {
       nextEl: '.slider-arrow-left',
       prevEl: '.slider-arrow-right',
@@ -29,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     watchSlidesProgress: true,
     watchSlidesVisibility: true,
     slidesPerView: 3,
-    loop: false,
+    loop: true,
     navigation: {
       nextEl: '.slider-arrow-right',
       prevEl: '.slider-arrow-left',
@@ -84,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   tabs('.tab-triggers', '.tab-trigger', '.tab-item', 'active');
 
-  // * Dropdown =================================================================
+  // * Dropdown ===========================
   const accordions = document.querySelectorAll('.dropdown');
 
   for (item of accordions) {
