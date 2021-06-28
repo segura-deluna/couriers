@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const sticky = header.offsetTop;
 
     const myFunction = () => {
-      if (window.pageYOffset >= sticky + 150 || window.innerWidth <= 1025) {
+      if (window.pageYOffset >= sticky + 150 || window.innerWidth <= 319) {
         header.classList.remove('hidden');
         header.classList.add('sticky');
       } else {
@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 3,
     loop: true,
     navigation: {
-      nextEl: '.slider-arrow-right',
-      prevEl: '.slider-arrow-left',
+      nextEl: '.slider-arrow-left',
+      prevEl: '.slider-arrow-right',
     },
     breakpoints: {
       1200: {

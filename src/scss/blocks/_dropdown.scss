@@ -18,6 +18,13 @@
     transition: all 0.3s ease-in-out;
   }
 
+  &__title.title--header {
+    padding: 15px 45px;
+    @media (max-width: 768px) {
+      padding: 15px 18px;
+    }
+  }
+
   &__title-icon {
     width: 11px;
     height: 7px;
@@ -99,4 +106,13 @@
   transform: rotate(-180deg);
   transform-origin: center;
   fill: $royalblue;
+}
+
+.dropdown.dropdown--white .dropdown__content {
+  width: 100.8%;
+  transform: translateX(-1px);
+  box-sizing: border-box;
+  border: 1px solid $catskill;
+  box-shadow: 0px 20px 20px -10px rgba(17, 27, 53, 0.12);
+  border-radius: 0px 0px 5px 5px;
 }

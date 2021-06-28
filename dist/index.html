@@ -24,11 +24,12 @@
 
 <body>
 
-	<section class="first-screen">
-		<h1>Первый экран</h1>
+	<div class="body-wrapper">
+		<section class="first-screen">
+			<h1>Первый экран</h1>
 
-		<!--	HEADER -->
-		<header class="header" id="header">
+			<!--	HEADER -->
+			<header class="header" id="header">
 
   <div class="top-header hidden" id="topHeader">
     <div class="container">
@@ -68,10 +69,19 @@
         </a>
         <!-- /.social__telegramm -->
 
+        <a href="" class="help">
+          <div class="help__item">
+            <div class="help__img">
+              <img src="img/help-header.svg" alt="help">
+            </div>
+          </div>
+        </a>
+        <!-- /.help -->
+
         <div class="header__telephone telephone">+7 (999) 545-58-79</div>
         <!-- /.header__telephone telephone -->
         <div class="header__dropdown dropdown">
-          <div class="dropdown__title">
+          <div class="dropdown__title title--header">
             <div class="dropdown__title-text">Помощь</div>
             <div class="dropdown__title-icon">
               <svg>
@@ -155,10 +165,20 @@
       </a>
       <!-- /.social__telegramm -->
 
+      <a href="" class="help">
+        <div class="help__item">
+          <div class="help__img">
+            <img src="img/help-header.svg" alt="help">
+          </div>
+        </div>
+      </a>
+      <!-- /.help -->
+
       <div class="header__telephone telephone">+7 (999) 545-58-79</div>
       <!-- /.header__telephone telephone -->
+
       <div class="header__dropdown dropdown">
-        <div class="dropdown__title">
+        <div class="dropdown__title title--header">
           <div class="dropdown__title-text">Помощь</div>
           <div class="dropdown__title-icon">
             <svg>
@@ -218,11 +238,11 @@
 </header>
 <!-- /.header -->
 
-		<div class="jobs">
+			<div class="jobs">
 	<div class="container jobs__container">
 		<div class="jobs__wrap">
 			<div class="jobs__title">
-				<span class="title__text title">Работа курьером с доходом</span>
+				<span class="title__text title">Работа курьером с&nbsp;доходом</span>
 				<div class="jobs__subtitle">до <span class="title-price jobs__price">5000 ₽</span> в день</div>
 			</div>
 			<!-- /.jobs__title -->
@@ -288,10 +308,61 @@
 <!-- /.jobs -->
 
 
-	</section>
+		</section>
 
-	<!-- Calculator -->
-	<section class="calculator" id="calculator">
+		<!-- Jobs-cards -->
+		<!-- JOBS-CARDS -->
+<div class="jobs__cards">
+	<div class="container">
+
+		<div class="jobs__card card">
+
+			<div class="card__wrap">
+				<div class="jobs__items">
+					<div class="jobs__item">
+						<div class="jobs__item-img">
+							<img src="img/jobs-icon-1.svg" alt="jobs">
+						</div>
+						<div class="jobs__item-text">
+							ежедневные
+							выплаты на&nbsp;карту
+						</div>
+					</div>
+					<div class="jobs__item">
+						<div class="jobs__item-img">
+							<img src="img/jobs-icon-2.svg" alt="jobs">
+						</div>
+						<div class="jobs__item-text">
+							опыт не
+							требуется
+						</div>
+					</div>
+					<div class="jobs__item">
+						<div class="jobs__item-img">
+							<img src="img/jobs-icon-3.svg" alt="jobs">
+						</div>
+						<div class="jobs__item-text">
+							свободный
+							график
+						</div>
+					</div>
+				</div>
+				<!-- /.jobs__items -->
+			</div>
+			<!-- /.card__wrap -->
+			<div class="card__back"></div>
+		</div>
+		<!-- /.jobs__card -->
+
+	</div>
+	<!-- /.container -->
+
+</div>
+<!-- /.jobs__cards -->
+
+
+		<!-- Calculator -->
+		<section class="calculator" id="calculator">
 	<div class="container calculator__container">
 		<h2 class="calculator__title title">Калькулятор заработка</h2>
 		<!-- /.calculator__title title -->
@@ -324,6 +395,8 @@
 					<!-- /.dropdown__content -->
 				</div>
 			</div>
+			<!-- /.calculator__item -->
+
 			<div class="calculator__item">
 				<p class="calculator__name">Рабочих дней в неделю</p>
 				<div class="calculator__dropdown dropdown dropdown--white">
@@ -352,6 +425,8 @@
 					<!-- /.dropdown__content -->
 				</div>
 			</div>
+			<!-- /.calculator__item -->
+
 			<div class="calculator__item">
 				<p class="calculator__name">Термокороб</p>
 				<div class="calculator__dropdown dropdown dropdown--white">
@@ -380,6 +455,8 @@
 					<!-- /.dropdown__content -->
 				</div>
 			</div>
+			<!-- /.calculator__item -->
+
 			<div class="calculator__item">
 				<p class="calculator__name">Население в городе</p>
 				<div class="calculator__dropdown dropdown dropdown--white">
@@ -408,6 +485,7 @@
 					<!-- /.dropdown__content -->
 				</div>
 			</div>
+			<!-- /.calculator__item -->
 		</div>
 		<!-- /.calculator__items -->
 
@@ -435,8 +513,8 @@
 <!-- /.calculator -->
 
 
-	<!-- Who-is -->
-	<section class="who-is" id="whois">
+		<!-- Who-is -->
+		<section class="who-is" id="whois">
 	<div class="container">
 		<h2 class="who-is__title title">Кто мы</h2>
 		<!-- /.who-is__title -->
@@ -478,8 +556,8 @@
 <!-- /.who-is -->
 
 
-	<!-- Clients -->
-	<section class="clients">
+		<!-- Clients -->
+		<section class="clients">
 	<div class="container">
 		<h2 class="clients__title title">Наши клиенты</h2>
 		<!-- /.clients__title title -->
@@ -490,28 +568,28 @@
 				<div class="clients__wrapper swiper-wrapper">
 					<!-- Slides -->
 					<div class="clients__slide swiper-slide">
-						<img src="img/slide-1.svg" alt="eldorado" class="clients__slide-img">
+						<img src="img/slide-1.png" alt="eldorado" class="clients__slide-img">
 					</div>
 					<div class="clients__slide swiper-slide">
-						<img src="img/slide-2.svg" alt="merlen" class="clients__slide-img">
+						<img src="img/slide-2.png" alt="merlen" class="clients__slide-img">
 					</div>
 					<div class="clients__slide swiper-slide">
-						<img src="img/slide-3.svg" alt="mvideo" class="clients__slide-img">
+						<img src="img/slide-3.png" alt="mvideo" class="clients__slide-img">
 					</div>
 					<div class="clients__slide swiper-slide">
-						<img src="img/slide-4.svg" alt="baucenter" class="clients__slide-img">
+						<img src="img/slide-4.png" alt="baucenter" class="clients__slide-img">
 					</div>
 					<div class="clients__slide swiper-slide">
-						<img src="img/slide-1.svg" alt="eldorado" class="clients__slide-img">
+						<img src="img/slide-1.png" alt="eldorado" class="clients__slide-img">
 					</div>
 					<div class="clients__slide swiper-slide">
-						<img src="img/slide-2.svg" alt="merlen" class="clients__slide-img">
+						<img src="img/slide-2.png" alt="merlen" class="clients__slide-img">
 					</div>
 					<div class="clients__slide swiper-slide">
-						<img src="img/slide-3.svg" alt="mvideo" class="clients__slide-img">
+						<img src="img/slide-3.png" alt="mvideo" class="clients__slide-img">
 					</div>
 					<div class="clients__slide swiper-slide">
-						<img src="img/slide-4.svg" alt="baucenter" class="clients__slide-img">
+						<img src="img/slide-4.png" alt="baucenter" class="clients__slide-img">
 					</div>
 				</div>
 			</div>
@@ -534,8 +612,8 @@
 <!-- /.clients -->
 
 
-	<!-- Vacancies -->
-	<section class="vacancies" id="vacancies">
+		<!-- Vacancies -->
+		<section class="vacancies" id="vacancies">
 	<div class="container">
 		<h2 class="vacancies__title title">Наши вакансии</h2>
 		<!-- /.vacancies__title title -->
@@ -662,8 +740,8 @@
 <!-- /.vacancies -->
 
 
-	<!-- Why are we -->
-	<section class="why" id="why">
+		<!-- Why are we -->
+		<section class="why" id="why">
 	<div class="top-bg"></div>
 	<div class="container">
 		<h2 class="why__title title">Почему выбирают нас</h2>
@@ -792,8 +870,8 @@
 <!-- /.why -->
 
 
-	<!-- Get started -->
-	<section class="getstart" id="getstart">
+		<!-- Get started -->
+		<section class="getstart" id="getstart">
 	<div class="container">
 		<h2 class="getstart__title title">Как приступить к работе?</h2>
 		<!-- /.getstart__title title -->
@@ -870,8 +948,8 @@
 <!-- /.getstart -->
 
 
-	<!-- Safety -->
-	<section class="safety" id="safety">
+		<!-- Safety -->
+		<section class="safety" id="safety">
 	<div class="container">
 		<h2 class="safety__title title">Анкеты соискателя</h2>
 		<!-- /.safety__title title -->
@@ -937,8 +1015,8 @@
 <!-- /.safety -->
 
 
-	<!-- Registration -->
-	<section class="registration" id="registration">
+		<!-- Registration -->
+		<section class="registration" id="registration">
 	<div class="top-bg"></div>
 	<div class="container">
 		<h2 class="registration__title title">Введите данные для автоматической регистрации по выбранной вакансии</h2>
@@ -983,15 +1061,17 @@
 					<h3 class="registration__content-title">Данные водительского удостоверения</h3>
 					<p class="registration__content-subtitle">Шаг <span>1</span> из 2:</p>
 				</div>
+
 				<form action="#" class="registration__content-form form">
+
 					<div class="form__items step1">
 						<div class="form__item item1">
 							<label for="first-name1">Фамилия</label>
-							<input type="text" class="form__input" id="first-name1" name="first-name" placeholder="Иванов">
+							<input type="text" class="form__input" id="first-name1" name="first-name" placeholder="Иванов" required>
 						</div>
 						<div class="form__item item2">
 							<label for="second-name1">Имя</label>
-							<input type="text" class="form__input" id="second-name1" name="second-name" placeholder="Иван">
+							<input type="text" class="form__input" id="second-name1" name="second-name" placeholder="Иван" required>
 						</div>
 						<div class="form__item item3">
 							<label for="third-name1">Отчество (не обязательно)</label>
@@ -999,7 +1079,7 @@
 						</div>
 						<div class="form__item item4">
 							<label for="phone1">Ваш телефон (например, +79991234567)</label>
-							<input type="text" class="form__input" id="phone1" name="phone" placeholder="+7 (___) ___-__-__">
+							<input type="text" class="form__input" id="phone1" name="phone" placeholder="+7 (___) ___-__-__" required>
 						</div>
 						<div class="form__item item5">
 							<label>Страна выдачи водительских прав</label>
@@ -1030,14 +1110,15 @@
 						</div>
 						<div class="form__item item6">
 							<label for="series1">Серия и номер водительских прав</label>
-							<input type="text" class="form__input" id="series1" name="series" placeholder="____ -____-__">
+							<input type="text" class="form__input" id="series1" name="series" placeholder="____ -____-__" required>
 						</div>
 						<div class="form__item item7">
 							<label for="date1">Дата выдачи</label>
-							<input type="text" class="form__input" id="date1" name="date" placeholder="дд.мм.гг">
+							<input type="text" class="form__input" id="date1" name="date" placeholder="дд.мм.гг" required>
 						</div>
 					</div>
-					<!-- /.form__items -->
+					<!-- /.form__items step1-->
+
 					<div class="form__items step2">
 						<div class="form__item item1">
 							<label for="mark1">Марка</label>
@@ -1068,7 +1149,7 @@
 						</div>
 						<div class="form__item item2">
 							<label for="model1">Модель</label>
-							<input type="text" class="form__input" id="model1" name="model" placeholder="Купе">
+							<input type="text" class="form__input" id="model1" name="model" placeholder="Купе" required>
 						</div>
 						<div class="form__item item3">
 							<label for="color1">Цвет</label>
@@ -1099,22 +1180,23 @@
 						</div>
 						<div class="form__item item4">
 							<label for="year1">Год</label>
-							<input type="text" class="form__input" id="year1" name="year" placeholder="2005">
+							<input type="text" class="form__input" id="year1" name="year" placeholder="2005" required>
 						</div>
 						<div class="form__item item5">
 							<label for="number1">Гос. номер авто на русском</label>
-							<input type="text" class="form__input" id="number1" name="number" placeholder="А333РР777 или АА12345">
+							<input type="text" class="form__input" id="number1" name="number" placeholder="А333РР777 или АА12345" required>
 						</div>
 						<div class="form__item item6">
 							<label for="vin1">VIN или номер кузова<br> (для проверки авто на&nbsp;угон)</label>
-							<input type="text" class="form__input" id="vin1" name="vin" placeholder="VW123GPDRMF123456">
+							<input type="text" class="form__input" id="vin1" name="vin" placeholder="VW123GPDRMF123456" required>
 						</div>
 						<div class="form__item item7">
 							<label for="sts1">Серия и номер СТС (пластиковое)</label>
-							<input type="text" class="form__input" id="sts1" name="sts" placeholder="77АЯ236574">
+							<input type="text" class="form__input" id="sts1" name="sts" placeholder="77АЯ236574" required>
 						</div>
 					</div>
-					<!-- /.form__items -->
+					<!-- /.form__items step2-->
+
 					<div class="form__submit">
 						<div class="form__consent">
 							<input type="checkbox" name="consent" id="consent1">
@@ -1141,11 +1223,11 @@
 					<div class="form__items walking">
 						<div class="form__item item1">
 							<label for="first-name4">Фамилия</label>
-							<input type="text" class="form__input" id="first-name4" name="first-name" placeholder="Иванов">
+							<input type="text" class="form__input" id="first-name4" name="first-name" placeholder="Иванов" required>
 						</div>
 						<div class="form__item item2">
 							<label for="second-name4">Имя</label>
-							<input type="text" class="form__input" id="second-name4" name="second-name" placeholder="Иван">
+							<input type="text" class="form__input" id="second-name4" name="second-name" placeholder="Иван" required>
 						</div>
 						<div class="form__item item3">
 							<label for="third-name4">Отчество (не обязательно)</label>
@@ -1153,11 +1235,11 @@
 						</div>
 						<div class="form__item item4">
 							<label for="phone4">Ваш телефон (например, +79991234567)</label>
-							<input type="text" class="form__input" id="phone4" name="phone" placeholder="+7 (___) ___-__-__">
+							<input type="text" class="form__input" id="phone4" name="phone" placeholder="+7 (___) ___-__-__" required>
 						</div>
 						<div class="form__item item5">
 							<label for="date4">Дата рождения (например, 01-06-1994)</label>
-							<input type="text" class="form__input" id="date4" name="date" placeholder="дд.мм.гг">
+							<input type="text" class="form__input" id="date4" name="date" placeholder="дд.мм.гг" required>
 						</div>
 					</div>
 					<!-- /.form__items -->
@@ -1185,14 +1267,15 @@
 					<p class="registration__content-subtitle">Шаг <span>1</span> из 2:</p>
 				</div>
 				<form action="#" class="registration__content-form form">
+
 					<div class="form__items step1">
 						<div class="form__item item1">
 							<label for="first-name2">Фамилия</label>
-							<input type="text" class="form__input" id="first-name2" name="first-name" placeholder="Иванов">
+							<input type="text" class="form__input" id="first-name2" name="first-name" placeholder="Иванов" required>
 						</div>
 						<div class="form__item item2">
 							<label for="second-name2">Имя</label>
-							<input type="text" class="form__input" id="second-name2" name="second-name" placeholder="Иван">
+							<input type="text" class="form__input" id="second-name2" name="second-name" placeholder="Иван" required>
 						</div>
 						<div class="form__item item3">
 							<label for="third-name2">Отчество (не обязательно)</label>
@@ -1200,7 +1283,7 @@
 						</div>
 						<div class="form__item item4">
 							<label for="phone2">Ваш телефон (например, +79991234567)</label>
-							<input type="text" class="form__input" id="phone2" name="phone" placeholder="+7 (___) ___-__-__">
+							<input type="text" class="form__input" id="phone2" name="phone" placeholder="+7 (___) ___-__-__" required>
 						</div>
 						<div class="form__item item5">
 							<label>Страна выдачи водительских прав</label>
@@ -1231,14 +1314,15 @@
 						</div>
 						<div class="form__item item6">
 							<label for="series2">Серия и номер водительских прав</label>
-							<input type="text" class="form__input" id="series2" name="series" placeholder="____ -____-__">
+							<input type="text" class="form__input" id="series2" name="series" placeholder="____ -____-__" required>
 						</div>
 						<div class="form__item item7">
 							<label for="date2">Дата выдачи</label>
-							<input type="text" class="form__input" id="date2" name="date" placeholder="дд.мм.гг">
+							<input type="text" class="form__input" id="date2" name="date" placeholder="дд.мм.гг" required>
 						</div>
 					</div>
 					<!-- /.form__items step1-->
+
 					<div class="form__items step2">
 						<div class="form__item item1">
 							<label for="mark2">Марка</label>
@@ -1269,7 +1353,7 @@
 						</div>
 						<div class="form__item item2">
 							<label for="model2">Модель</label>
-							<input type="text" class="form__input" id="model2" name="model" placeholder="Купе">
+							<input type="text" class="form__input" id="model2" name="model" placeholder="Купе" required>
 						</div>
 						<div class="form__item item3">
 							<label for="color2">Цвет</label>
@@ -1300,19 +1384,19 @@
 						</div>
 						<div class="form__item item4">
 							<label for="year2">Год</label>
-							<input type="text" class="form__input" id="year2" name="year" placeholder="2005">
+							<input type="text" class="form__input" id="year2" name="year" placeholder="2005" required>
 						</div>
 						<div class="form__item item5">
 							<label for="number2">Гос. номер авто на русском</label>
-							<input type="text" class="form__input" id="number2" name="number" placeholder="А333РР777 или АА12345">
+							<input type="text" class="form__input" id="number2" name="number" placeholder="А333РР777 или АА12345" required>
 						</div>
 						<div class="form__item item6">
 							<label for="vin2">VIN или номер кузова<br> (для проверки авто на&nbsp;угон)</label>
-							<input type="text" class="form__input" id="vin2" name="vin" placeholder="VW123GPDRMF123456">
+							<input type="text" class="form__input" id="vin2" name="vin" placeholder="VW123GPDRMF123456" required>
 						</div>
 						<div class="form__item item7">
 							<label for="sts2">Серия и номер СТС (пластиковое)</label>
-							<input type="text" class="form__input" id="sts2" name="sts" placeholder="77АЯ236574">
+							<input type="text" class="form__input" id="sts2" name="sts" placeholder="77АЯ236574" required>
 						</div>
 					</div>
 					<!-- /.form__items step2-->
@@ -1341,14 +1425,15 @@
 					<p class="registration__content-subtitle">Шаг <span>1</span> из 2:</p>
 				</div>
 				<form action="#" class="registration__content-form form">
+
 					<div class="form__items step1">
 						<div class="form__item item1">
 							<label for="first-name3">Фамилия</label>
-							<input type="text" class="form__input" id="first-name3" name="first-name" placeholder="Иванов">
+							<input type="text" class="form__input" id="first-name3" name="first-name" placeholder="Иванов" required>
 						</div>
 						<div class="form__item item2">
 							<label for="second-name3">Имя</label>
-							<input type="text" class="form__input" id="second-name3" name="second-name" placeholder="Иван">
+							<input type="text" class="form__input" id="second-name3" name="second-name" placeholder="Иван" required>
 						</div>
 						<div class="form__item item3">
 							<label for="third-name3">Отчество (не обязательно)</label>
@@ -1356,7 +1441,7 @@
 						</div>
 						<div class="form__item item4">
 							<label for="phone3">Ваш телефон (например, +79991234567)</label>
-							<input type="text" class="form__input" id="phone3" name="phone" placeholder="+7 (___) ___-__-__">
+							<input type="text" class="form__input" id="phone3" name="phone" placeholder="+7 (___) ___-__-__" required>
 						</div>
 						<div class="form__item item5">
 							<label>Страна выдачи водительских прав</label>
@@ -1387,11 +1472,11 @@
 						</div>
 						<div class="form__item item6">
 							<label for="series3">Серия и номер водительских прав</label>
-							<input type="text" class="form__input" id="series3" name="series" placeholder="____ -____-__">
+							<input type="text" class="form__input" id="series3" name="series" placeholder="____ -____-__" required>
 						</div>
 						<div class="form__item item7">
 							<label for="date3">Дата выдачи</label>
-							<input type="text" class="form__input" id="date3" name="date" placeholder="дд.мм.гг">
+							<input type="text" class="form__input" id="date3" name="date" placeholder="дд.мм.гг" required>
 						</div>
 					</div>
 					<!-- /.form__items step1-->
@@ -1426,7 +1511,7 @@
 						</div>
 						<div class="form__item item2">
 							<label for="model3">Модель</label>
-							<input type="text" class="form__input" id="model3" name="model" placeholder="Купе">
+							<input type="text" class="form__input" id="model3" name="model" placeholder="Купе" required>
 						</div>
 						<div class="form__item item3">
 							<label for="color3">Цвет</label>
@@ -1457,42 +1542,43 @@
 						</div>
 						<div class="form__item item4">
 							<label for="year3">Год</label>
-							<input type="text" class="form__input" id="year3" name="year" placeholder="2005">
+							<input type="text" class="form__input" id="year3" name="year" placeholder="2005" required>
 						</div>
 						<div class="form__item item5">
 							<label for="number3">Гос. номер авто на русском</label>
-							<input type="text" class="form__input" id="number3" name="number" placeholder="А333РР777 или АА12345">
+							<input type="text" class="form__input" id="number3" name="number" placeholder="А333РР777 или АА12345" required>
 						</div>
 						<div class="form__item item6">
 							<label for="vin3">VIN или номер кузова<br> (для&nbsp;проверки&nbsp;на&nbsp;угон)</label>
-							<input type="text" class="form__input" id="vin3" name="vin" placeholder="VW123GPDRMF123456">
+							<input type="text" class="form__input" id="vin3" name="vin" placeholder="VW123GPDRMF123456" required>
 						</div>
 						<div class="form__item item7">
 							<label for="sts3">Серия и номер СТС (пластиковое)</label>
-							<input type="text" class="form__input" id="sts3" name="sts" placeholder="77АЯ236574">
+							<input type="text" class="form__input" id="sts3" name="sts" placeholder="77АЯ236574" required>
 						</div>
 						<div class="form__item item8">
 							<label for="length">Длина (см)</label>
-							<input type="text" class="form__input" id="length" name="length" placeholder="5000">
+							<input type="text" class="form__input" id="length" name="length" placeholder="5000" required>
 						</div>
 						<div class="form__item item9">
 							<label for="width">Ширина (см)</label>
-							<input type="text" class="form__input" id="width" name="width" placeholder="5000">
+							<input type="text" class="form__input" id="width" name="width" placeholder="5000" required>
 						</div>
 						<div class="form__item item10">
 							<label for="height">Высота (см)</label>
-							<input type="text" class="form__input" id="height" name="height" placeholder="1800">
+							<input type="text" class="form__input" id="height" name="height" placeholder="1800" required>
 						</div>
 						<div class="form__item item11">
 							<label for="tonnage">Грузоподъемность (кг)</label>
-							<input type="text" class="form__input" id="tonnage" name="tonnage" placeholder="2000">
+							<input type="text" class="form__input" id="tonnage" name="tonnage" placeholder="2000" required>
 						</div>
 						<div class="form__item item12">
 							<label for="count">Грузчики количество (0 или 1)</label>
-							<input type="text" class="form__input" id="count" name="count" placeholder="0">
+							<input type="text" class="form__input" id="count" name="count" placeholder="0" required>
 						</div>
 					</div>
 					<!-- /.form__items step2-->
+
 					<div class="form__submit">
 						<div class="form__consent">
 							<label for="consent3">Я даю согласие на условия оферты</label>
@@ -1517,8 +1603,8 @@
 <!-- /.registration -->
 
 
-	<!-- Review -->
-	<section class="review">
+		<!-- Review -->
+		<section class="review">
 	<div class="container">
 		<h2 class="review__title">Отзывы</h2>
 		<!-- /.review__title -->
@@ -1538,7 +1624,7 @@
 					<div class="review__item swiper-slide">
 						<div class="review__card card">
 							<div class="card__img-front">
-								<img src="img/play.svg" alt="play">
+
 							</div>
 							<div class="card__wrap">
 								<div class="card__images">
@@ -1563,7 +1649,7 @@
 					<div class="review__item swiper-slide">
 						<div class="review__card card">
 							<div class="card__img-front">
-								<img src="img/play.svg" alt="play">
+
 							</div>
 							<div class="card__wrap">
 								<div class="card__images">
@@ -1588,7 +1674,7 @@
 					<div class="review__item swiper-slide">
 						<div class="review__card card">
 							<div class="card__img-front">
-								<img src="img/play.svg" alt="play">
+
 							</div>
 							<div class="card__wrap">
 								<div class="card__images">
@@ -1613,7 +1699,7 @@
 					<div class="review__item swiper-slide">
 						<div class="review__card card">
 							<div class="card__img-front">
-								<img src="img/play.svg" alt="play">
+
 							</div>
 							<div class="card__wrap">
 								<div class="card__images">
@@ -1638,7 +1724,7 @@
 					<div class="review__item swiper-slide">
 						<div class="review__card card">
 							<div class="card__img-front">
-								<img src="img/play.svg" alt="play">
+
 							</div>
 							<div class="card__wrap">
 								<div class="card__images">
@@ -1663,7 +1749,7 @@
 					<div class="review__item swiper-slide">
 						<div class="review__card card">
 							<div class="card__img-front">
-								<img src="img/play.svg" alt="play">
+
 							</div>
 							<div class="card__wrap">
 								<div class="card__images">
@@ -1717,7 +1803,7 @@
 </section>
 <!-- /.review -->
 
-	<section class="helper" id="helper">
+		<section class="helper" id="helper">
 	<div class="container">
 		<div class="helper__card card">
 			<div class="card__wrap">
@@ -1754,8 +1840,8 @@
 <!-- /.helper -->
 
 
-	<!-- FOOTER -->
-	<div class="footer">
+		<!-- FOOTER -->
+		<div class="footer">
 	<div class="footer__top">
 		<div class="container">
 			<div class="footer__top-wrap">
@@ -1842,6 +1928,10 @@
 	<!-- /.footer__button -->
 </div>
 <!-- /.footer -->
+
+	</div>
+	<!-- /.body-wrapper -->
+
 
 
 

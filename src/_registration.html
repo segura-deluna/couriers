@@ -43,15 +43,17 @@
 					<h3 class="registration__content-title">Данные водительского удостоверения</h3>
 					<p class="registration__content-subtitle">Шаг <span>1</span> из 2:</p>
 				</div>
+
 				<form action="#" class="registration__content-form form">
+
 					<div class="form__items step1">
 						<div class="form__item item1">
 							<label for="first-name1">Фамилия</label>
-							<input type="text" class="form__input" id="first-name1" name="first-name" placeholder="Иванов">
+							<input type="text" class="form__input" id="first-name1" name="first-name" placeholder="Иванов" required>
 						</div>
 						<div class="form__item item2">
 							<label for="second-name1">Имя</label>
-							<input type="text" class="form__input" id="second-name1" name="second-name" placeholder="Иван">
+							<input type="text" class="form__input" id="second-name1" name="second-name" placeholder="Иван" required>
 						</div>
 						<div class="form__item item3">
 							<label for="third-name1">Отчество (не обязательно)</label>
@@ -59,7 +61,7 @@
 						</div>
 						<div class="form__item item4">
 							<label for="phone1">Ваш телефон (например, +79991234567)</label>
-							<input type="text" class="form__input" id="phone1" name="phone" placeholder="+7 (___) ___-__-__">
+							<input type="text" class="form__input" id="phone1" name="phone" placeholder="+7 (___) ___-__-__" required>
 						</div>
 						<div class="form__item item5">
 							<label>Страна выдачи водительских прав</label>
@@ -90,14 +92,15 @@
 						</div>
 						<div class="form__item item6">
 							<label for="series1">Серия и номер водительских прав</label>
-							<input type="text" class="form__input" id="series1" name="series" placeholder="____ -____-__">
+							<input type="text" class="form__input" id="series1" name="series" placeholder="____ -____-__" required>
 						</div>
 						<div class="form__item item7">
 							<label for="date1">Дата выдачи</label>
-							<input type="text" class="form__input" id="date1" name="date" placeholder="дд.мм.гг">
+							<input type="text" class="form__input" id="date1" name="date" placeholder="дд.мм.гг" required>
 						</div>
 					</div>
-					<!-- /.form__items -->
+					<!-- /.form__items step1-->
+
 					<div class="form__items step2">
 						<div class="form__item item1">
 							<label for="mark1">Марка</label>
@@ -128,7 +131,7 @@
 						</div>
 						<div class="form__item item2">
 							<label for="model1">Модель</label>
-							<input type="text" class="form__input" id="model1" name="model" placeholder="Купе">
+							<input type="text" class="form__input" id="model1" name="model" placeholder="Купе" required>
 						</div>
 						<div class="form__item item3">
 							<label for="color1">Цвет</label>
@@ -159,22 +162,23 @@
 						</div>
 						<div class="form__item item4">
 							<label for="year1">Год</label>
-							<input type="text" class="form__input" id="year1" name="year" placeholder="2005">
+							<input type="text" class="form__input" id="year1" name="year" placeholder="2005" required>
 						</div>
 						<div class="form__item item5">
 							<label for="number1">Гос. номер авто на русском</label>
-							<input type="text" class="form__input" id="number1" name="number" placeholder="А333РР777 или АА12345">
+							<input type="text" class="form__input" id="number1" name="number" placeholder="А333РР777 или АА12345" required>
 						</div>
 						<div class="form__item item6">
 							<label for="vin1">VIN или номер кузова<br> (для проверки авто на&nbsp;угон)</label>
-							<input type="text" class="form__input" id="vin1" name="vin" placeholder="VW123GPDRMF123456">
+							<input type="text" class="form__input" id="vin1" name="vin" placeholder="VW123GPDRMF123456" required>
 						</div>
 						<div class="form__item item7">
 							<label for="sts1">Серия и номер СТС (пластиковое)</label>
-							<input type="text" class="form__input" id="sts1" name="sts" placeholder="77АЯ236574">
+							<input type="text" class="form__input" id="sts1" name="sts" placeholder="77АЯ236574" required>
 						</div>
 					</div>
-					<!-- /.form__items -->
+					<!-- /.form__items step2-->
+
 					<div class="form__submit">
 						<div class="form__consent">
 							<input type="checkbox" name="consent" id="consent1">
@@ -201,11 +205,11 @@
 					<div class="form__items walking">
 						<div class="form__item item1">
 							<label for="first-name4">Фамилия</label>
-							<input type="text" class="form__input" id="first-name4" name="first-name" placeholder="Иванов">
+							<input type="text" class="form__input" id="first-name4" name="first-name" placeholder="Иванов" required>
 						</div>
 						<div class="form__item item2">
 							<label for="second-name4">Имя</label>
-							<input type="text" class="form__input" id="second-name4" name="second-name" placeholder="Иван">
+							<input type="text" class="form__input" id="second-name4" name="second-name" placeholder="Иван" required>
 						</div>
 						<div class="form__item item3">
 							<label for="third-name4">Отчество (не обязательно)</label>
@@ -213,11 +217,11 @@
 						</div>
 						<div class="form__item item4">
 							<label for="phone4">Ваш телефон (например, +79991234567)</label>
-							<input type="text" class="form__input" id="phone4" name="phone" placeholder="+7 (___) ___-__-__">
+							<input type="text" class="form__input" id="phone4" name="phone" placeholder="+7 (___) ___-__-__" required>
 						</div>
 						<div class="form__item item5">
 							<label for="date4">Дата рождения (например, 01-06-1994)</label>
-							<input type="text" class="form__input" id="date4" name="date" placeholder="дд.мм.гг">
+							<input type="text" class="form__input" id="date4" name="date" placeholder="дд.мм.гг" required>
 						</div>
 					</div>
 					<!-- /.form__items -->
@@ -245,14 +249,15 @@
 					<p class="registration__content-subtitle">Шаг <span>1</span> из 2:</p>
 				</div>
 				<form action="#" class="registration__content-form form">
+
 					<div class="form__items step1">
 						<div class="form__item item1">
 							<label for="first-name2">Фамилия</label>
-							<input type="text" class="form__input" id="first-name2" name="first-name" placeholder="Иванов">
+							<input type="text" class="form__input" id="first-name2" name="first-name" placeholder="Иванов" required>
 						</div>
 						<div class="form__item item2">
 							<label for="second-name2">Имя</label>
-							<input type="text" class="form__input" id="second-name2" name="second-name" placeholder="Иван">
+							<input type="text" class="form__input" id="second-name2" name="second-name" placeholder="Иван" required>
 						</div>
 						<div class="form__item item3">
 							<label for="third-name2">Отчество (не обязательно)</label>
@@ -260,7 +265,7 @@
 						</div>
 						<div class="form__item item4">
 							<label for="phone2">Ваш телефон (например, +79991234567)</label>
-							<input type="text" class="form__input" id="phone2" name="phone" placeholder="+7 (___) ___-__-__">
+							<input type="text" class="form__input" id="phone2" name="phone" placeholder="+7 (___) ___-__-__" required>
 						</div>
 						<div class="form__item item5">
 							<label>Страна выдачи водительских прав</label>
@@ -291,14 +296,15 @@
 						</div>
 						<div class="form__item item6">
 							<label for="series2">Серия и номер водительских прав</label>
-							<input type="text" class="form__input" id="series2" name="series" placeholder="____ -____-__">
+							<input type="text" class="form__input" id="series2" name="series" placeholder="____ -____-__" required>
 						</div>
 						<div class="form__item item7">
 							<label for="date2">Дата выдачи</label>
-							<input type="text" class="form__input" id="date2" name="date" placeholder="дд.мм.гг">
+							<input type="text" class="form__input" id="date2" name="date" placeholder="дд.мм.гг" required>
 						</div>
 					</div>
 					<!-- /.form__items step1-->
+
 					<div class="form__items step2">
 						<div class="form__item item1">
 							<label for="mark2">Марка</label>
@@ -329,7 +335,7 @@
 						</div>
 						<div class="form__item item2">
 							<label for="model2">Модель</label>
-							<input type="text" class="form__input" id="model2" name="model" placeholder="Купе">
+							<input type="text" class="form__input" id="model2" name="model" placeholder="Купе" required>
 						</div>
 						<div class="form__item item3">
 							<label for="color2">Цвет</label>
@@ -360,19 +366,19 @@
 						</div>
 						<div class="form__item item4">
 							<label for="year2">Год</label>
-							<input type="text" class="form__input" id="year2" name="year" placeholder="2005">
+							<input type="text" class="form__input" id="year2" name="year" placeholder="2005" required>
 						</div>
 						<div class="form__item item5">
 							<label for="number2">Гос. номер авто на русском</label>
-							<input type="text" class="form__input" id="number2" name="number" placeholder="А333РР777 или АА12345">
+							<input type="text" class="form__input" id="number2" name="number" placeholder="А333РР777 или АА12345" required>
 						</div>
 						<div class="form__item item6">
 							<label for="vin2">VIN или номер кузова<br> (для проверки авто на&nbsp;угон)</label>
-							<input type="text" class="form__input" id="vin2" name="vin" placeholder="VW123GPDRMF123456">
+							<input type="text" class="form__input" id="vin2" name="vin" placeholder="VW123GPDRMF123456" required>
 						</div>
 						<div class="form__item item7">
 							<label for="sts2">Серия и номер СТС (пластиковое)</label>
-							<input type="text" class="form__input" id="sts2" name="sts" placeholder="77АЯ236574">
+							<input type="text" class="form__input" id="sts2" name="sts" placeholder="77АЯ236574" required>
 						</div>
 					</div>
 					<!-- /.form__items step2-->
@@ -401,14 +407,15 @@
 					<p class="registration__content-subtitle">Шаг <span>1</span> из 2:</p>
 				</div>
 				<form action="#" class="registration__content-form form">
+
 					<div class="form__items step1">
 						<div class="form__item item1">
 							<label for="first-name3">Фамилия</label>
-							<input type="text" class="form__input" id="first-name3" name="first-name" placeholder="Иванов">
+							<input type="text" class="form__input" id="first-name3" name="first-name" placeholder="Иванов" required>
 						</div>
 						<div class="form__item item2">
 							<label for="second-name3">Имя</label>
-							<input type="text" class="form__input" id="second-name3" name="second-name" placeholder="Иван">
+							<input type="text" class="form__input" id="second-name3" name="second-name" placeholder="Иван" required>
 						</div>
 						<div class="form__item item3">
 							<label for="third-name3">Отчество (не обязательно)</label>
@@ -416,7 +423,7 @@
 						</div>
 						<div class="form__item item4">
 							<label for="phone3">Ваш телефон (например, +79991234567)</label>
-							<input type="text" class="form__input" id="phone3" name="phone" placeholder="+7 (___) ___-__-__">
+							<input type="text" class="form__input" id="phone3" name="phone" placeholder="+7 (___) ___-__-__" required>
 						</div>
 						<div class="form__item item5">
 							<label>Страна выдачи водительских прав</label>
@@ -447,11 +454,11 @@
 						</div>
 						<div class="form__item item6">
 							<label for="series3">Серия и номер водительских прав</label>
-							<input type="text" class="form__input" id="series3" name="series" placeholder="____ -____-__">
+							<input type="text" class="form__input" id="series3" name="series" placeholder="____ -____-__" required>
 						</div>
 						<div class="form__item item7">
 							<label for="date3">Дата выдачи</label>
-							<input type="text" class="form__input" id="date3" name="date" placeholder="дд.мм.гг">
+							<input type="text" class="form__input" id="date3" name="date" placeholder="дд.мм.гг" required>
 						</div>
 					</div>
 					<!-- /.form__items step1-->
@@ -486,7 +493,7 @@
 						</div>
 						<div class="form__item item2">
 							<label for="model3">Модель</label>
-							<input type="text" class="form__input" id="model3" name="model" placeholder="Купе">
+							<input type="text" class="form__input" id="model3" name="model" placeholder="Купе" required>
 						</div>
 						<div class="form__item item3">
 							<label for="color3">Цвет</label>
@@ -517,42 +524,43 @@
 						</div>
 						<div class="form__item item4">
 							<label for="year3">Год</label>
-							<input type="text" class="form__input" id="year3" name="year" placeholder="2005">
+							<input type="text" class="form__input" id="year3" name="year" placeholder="2005" required>
 						</div>
 						<div class="form__item item5">
 							<label for="number3">Гос. номер авто на русском</label>
-							<input type="text" class="form__input" id="number3" name="number" placeholder="А333РР777 или АА12345">
+							<input type="text" class="form__input" id="number3" name="number" placeholder="А333РР777 или АА12345" required>
 						</div>
 						<div class="form__item item6">
 							<label for="vin3">VIN или номер кузова<br> (для&nbsp;проверки&nbsp;на&nbsp;угон)</label>
-							<input type="text" class="form__input" id="vin3" name="vin" placeholder="VW123GPDRMF123456">
+							<input type="text" class="form__input" id="vin3" name="vin" placeholder="VW123GPDRMF123456" required>
 						</div>
 						<div class="form__item item7">
 							<label for="sts3">Серия и номер СТС (пластиковое)</label>
-							<input type="text" class="form__input" id="sts3" name="sts" placeholder="77АЯ236574">
+							<input type="text" class="form__input" id="sts3" name="sts" placeholder="77АЯ236574" required>
 						</div>
 						<div class="form__item item8">
 							<label for="length">Длина (см)</label>
-							<input type="text" class="form__input" id="length" name="length" placeholder="5000">
+							<input type="text" class="form__input" id="length" name="length" placeholder="5000" required>
 						</div>
 						<div class="form__item item9">
 							<label for="width">Ширина (см)</label>
-							<input type="text" class="form__input" id="width" name="width" placeholder="5000">
+							<input type="text" class="form__input" id="width" name="width" placeholder="5000" required>
 						</div>
 						<div class="form__item item10">
 							<label for="height">Высота (см)</label>
-							<input type="text" class="form__input" id="height" name="height" placeholder="1800">
+							<input type="text" class="form__input" id="height" name="height" placeholder="1800" required>
 						</div>
 						<div class="form__item item11">
 							<label for="tonnage">Грузоподъемность (кг)</label>
-							<input type="text" class="form__input" id="tonnage" name="tonnage" placeholder="2000">
+							<input type="text" class="form__input" id="tonnage" name="tonnage" placeholder="2000" required>
 						</div>
 						<div class="form__item item12">
 							<label for="count">Грузчики количество (0 или 1)</label>
-							<input type="text" class="form__input" id="count" name="count" placeholder="0">
+							<input type="text" class="form__input" id="count" name="count" placeholder="0" required>
 						</div>
 					</div>
 					<!-- /.form__items step2-->
+
 					<div class="form__submit">
 						<div class="form__consent">
 							<label for="consent3">Я даю согласие на условия оферты</label>

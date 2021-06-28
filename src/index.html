@@ -10,45 +10,53 @@
 
 <body>
 
-	<section class="first-screen">
-		<h1>Первый экран</h1>
+	<div class="body-wrapper">
+		<section class="first-screen">
+			<h1>Первый экран</h1>
 
-		<!--	HEADER -->
-		@@include('_header.html')
-		@@include('_jobs.html')
+			<!--	HEADER -->
+			@@include('_header.html')
+			@@include('_jobs.html')
 
-	</section>
+		</section>
 
-	<!-- Calculator -->
-	@@include('_calculator.html')
+		<!-- Jobs-cards -->
+		@@include('_jobs-card.html')
 
-	<!-- Who-is -->
-	@@include('_who-is.html')
+		<!-- Calculator -->
+		@@include('_calculator.html')
 
-	<!-- Clients -->
-	@@include('_clients.html')
+		<!-- Who-is -->
+		@@include('_who-is.html')
 
-	<!-- Vacancies -->
-	@@include('_vacancies.html')
+		<!-- Clients -->
+		@@include('_clients.html')
 
-	<!-- Why are we -->
-	@@include('_why.html')
+		<!-- Vacancies -->
+		@@include('_vacancies.html')
 
-	<!-- Get started -->
-	@@include('_getstart.html')
+		<!-- Why are we -->
+		@@include('_why.html')
 
-	<!-- Safety -->
-	@@include('_safety.html')
+		<!-- Get started -->
+		@@include('_getstart.html')
 
-	<!-- Registration -->
-	@@include('_registration.html')
+		<!-- Safety -->
+		@@include('_safety.html')
 
-	<!-- Review -->
-	@@include('_review.html')
-	@@include('_helper.html')
+		<!-- Registration -->
+		@@include('_registration.html')
 
-	<!-- FOOTER -->
-	@@include('_footer.html')
+		<!-- Review -->
+		@@include('_review.html')
+		@@include('_helper.html')
+
+		<!-- FOOTER -->
+		@@include('_footer.html')
+	</div>
+	<!-- /.body-wrapper -->
+
+
 
 
 	<script src="js/libs/smooth-scroll.polyfills.min.js"></script>

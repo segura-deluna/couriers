@@ -13,11 +13,12 @@
 @import 'base';
 
 //==== Blocks ====
+@import 'blocks/buttons';
 @import 'blocks/header';
 @import 'blocks/dropdown';
 @import 'blocks/navigation';
 @import 'blocks/jobs';
-@import 'blocks/buttons';
+@import 'blocks/jobs-card';
 @import 'blocks/calculator';
 @import 'blocks/who-is';
 @import 'blocks/clients';

@@ -149,13 +149,13 @@
 
   &__input {
     width: 100%;
-    // max-width: 285px;
     height: 60px;
     background: $white;
     font-weight: normal;
     font-size: 1.6rem;
     line-height: 19px;
     border: none;
+    outline: none;
     border: 1px solid $catskill;
     border-radius: 5px;
     padding: 18px 20px 15px;
@@ -165,11 +165,13 @@
       line-height: 20px;
       color: $cadetblue;
     }
+    &:focus {
+      border-color: $mishka;
+    }
   }
 
   &__dropdown {
     width: 100%;
-    // max-width: 285px;
     height: 60px;
     background: $white;
     font-weight: normal;
@@ -192,7 +194,6 @@
   &__consent {
     position: relative;
     display: flex;
-    // justify-content: center;
     align-items: center;
     & label {
       font-weight: 400;
@@ -208,7 +209,7 @@
         z-index: 1;
         width: 22px;
         height: 22px;
-        border: 1px solid $mako;
+        border: 1px solid $mishka;
         border-radius: 3px;
       }
       &::after {

@@ -7,7 +7,7 @@
     z-index: 20;
     background: $white;
     width: 100%;
-    box-shadow: 0px 15px 30px 0 rgba(40, 74, 183, 0.2);
+    box-shadow: 0px 30px 30px 0 rgba(40, 74, 183, 0.1);
   }
 
   &__wrap {
@@ -16,6 +16,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 25px 2px;
+
+    @media (max-width: 450px) {
+      padding: 15px 0;
+    }
   }
 
   &__logo {
@@ -27,6 +31,12 @@
   &__dropdown {
     max-width: 180px;
     height: 40px;
+    @media (max-width: 768px) {
+      max-width: 120px;
+    }
+    @media (max-width: 450px) {
+      display: none;
+    }
   }
 
   &__nav {
@@ -35,6 +45,9 @@
     border-radius: 3px;
     background-color: $royalblue;
     box-shadow: 0px 30px 30px -15px rgba(40, 74, 183, 0.2);
+    @media (max-width: 868px) {
+      display: none;
+    }
   }
 }
 
@@ -42,6 +55,13 @@
   display: inline-block;
   width: 100%;
   max-width: 180px;
+  @media (max-width: 450px) {
+    max-width: 153px;
+    height: 40px;
+  }
+  @media (max-width: 380px) {
+    margin-right: 25px;
+  }
 }
 
 .logo {
@@ -52,6 +72,10 @@
   &__img {
     width: 40px;
     height: 44px;
+    @media (max-width: 450px) {
+      max-width: 33px;
+      height: 37px;
+    }
   }
 
   &__text {
@@ -63,8 +87,12 @@
     line-height: 36px;
     letter-spacing: 0.05em;
     color: $ebony;
+    @media (max-width: 450px) {
+      font-size: 2.6rem;
+      line-height: 30px;
+    }
     & span {
-      display: inline-block;
+      display: block;
       font-family: 'Norms', sans-serif;
       font-weight: 500;
       font-size: 1.1rem;
@@ -72,6 +100,11 @@
       letter-spacing: 0.02em;
       text-transform: uppercase;
       color: $cadetblue;
+      @media (max-width: 450px) {
+        font-size: 0.9rem;
+        line-height: 9px;
+        margin-right: 6px;
+      }
     }
   }
 }
@@ -85,6 +118,9 @@
     display: inline-block;
     width: 100%;
     max-width: 130px;
+    @media (max-width: 920px) {
+      max-width: 40px;
+    }
     &:hover {
       & .whatsapp {
         fill: $scremgreen;
@@ -96,6 +132,10 @@
     & .whatsapp {
       fill: $esmerald;
       transition: fill 0.3s ease-in-out;
+      @media (max-width: 450px) {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 
@@ -103,6 +143,9 @@
     display: inline-block;
     width: 100%;
     max-width: 120px;
+    @media (max-width: 920px) {
+      max-width: 40px;
+    }
     &:hover {
       & .telegram {
         fill: $cerulean;
@@ -114,6 +157,10 @@
     & .telegram {
       fill: $lochmara;
       transition: fill 0.3s ease-in-out;
+      @media (max-width: 450px) {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 
@@ -128,6 +175,10 @@
   &__img {
     width: 40px;
     height: 40px;
+    @media (max-width: 450px) {
+      width: 30px;
+      height: 30px;
+    }
   }
 
   &__name {
@@ -135,6 +186,16 @@
     font-size: 1.6rem;
     color: $mako;
     transition: color 0.3s ease-in-out;
+    @media (max-width: 920px) {
+      display: none;
+    }
+  }
+}
+
+.help {
+  display: none;
+  @media (max-width: 450px) {
+    display: block;
   }
 }
 
@@ -143,4 +204,22 @@
   font-size: 2.4rem;
   line-height: 28px;
   letter-spacing: 0.02em;
+  @media (max-width: 920px) {
+    font-size: 2.2rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 657px) {
+    display: none;
+  }
 }
+
+// @media (max-width: 920px) {
+//   .header {
+//     padding-top: 90px;
+//   }
+//   .top-header {
+//     display: none;
+//   }
+// }
