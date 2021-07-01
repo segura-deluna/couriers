@@ -2484,11 +2484,64 @@ svg {
   background: #fafafa;
 }
 
+@media (max-width: 1200px) {
+  .why {
+    padding: 30px 0 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .why {
+    padding: 30px 0 40px;
+  }
+}
+
+@media (max-width: 705px) {
+  .why {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .why {
+    padding: 15px 0;
+  }
+}
+
 .why__title {
   position: relative;
   z-index: 1;
   text-align: center;
   margin-bottom: 60px;
+}
+
+@media (max-width: 1200px) {
+  .why__title {
+    font-size: 3.8rem;
+    line-height: 44px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .why__title {
+    font-size: 3rem;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 705px) {
+  .why__title {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .why__title {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
 }
 
 .why__items {
@@ -2497,6 +2550,26 @@ svg {
   grid-template-rows: repeat(5, 1fr);
   gap: 30px;
   margin-bottom: 60px;
+}
+
+@media (max-width: 900px) {
+  .why__items {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 705px) {
+  .why__items {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .why__items {
+    margin-bottom: 15px;
+  }
 }
 
 .why__item {
@@ -2508,6 +2581,19 @@ svg {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+@media (max-width: 900px) {
+  .why__item {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .why__item {
+    flex-direction: column;
+    padding: 18px 20px;
+  }
 }
 
 .why__icon {
@@ -2523,10 +2609,54 @@ svg {
   box-shadow: 0px 20px 20px -10px rgba(40, 74, 183, 0.2);
 }
 
+@media (max-width: 900px) {
+  .why__icon {
+    max-width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 450px) {
+  .why__icon {
+    margin-bottom: 11px;
+  }
+}
+
 .why__text {
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 25px;
+}
+
+@media (max-width: 1200px) {
+  .why__text {
+    font-size: 1.6rem;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 450px) {
+  .why__text {
+    font-size: 1.5rem;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.why__button {
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .why__button {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .why__button {
+    max-width: 100%;
+  }
 }
 
 .why__button-link {
@@ -2534,6 +2664,18 @@ svg {
   width: 100%;
   max-width: 285px;
   margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .why__button-link {
+    height: 60px;
+  }
+}
+
+@media (max-width: 450px) {
+  .why__button-link {
+    max-width: 100%;
+  }
 }
 
 .getstart {
