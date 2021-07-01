@@ -29,15 +29,34 @@ document.addEventListener('DOMContentLoaded', () => {
     watchSlidesProgress: true,
     watchSlidesVisibility: true,
     slidesPerView: 4,
+    spaceBetween: 30,
     loop: true,
     navigation: {
       nextEl: '.slider-arrow-left',
       prevEl: '.slider-arrow-right',
     },
     breakpoints: {
-      1200: {
-        slidesPerView: 4,
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        centeredSlides: true,
+        loop: false,
+      },
+      576: {
+        slidesPerView: 2,
         spaceBetween: 30,
+      },
+      770: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: false,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
       },
     },
   });

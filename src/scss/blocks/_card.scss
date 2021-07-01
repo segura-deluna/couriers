@@ -10,6 +10,31 @@
     position: relative;
     z-index: 2;
     background-color: $white;
+    @media (max-width: 1200px) {
+      justify-content: flex-end;
+      padding-right: 25px;
+    }
+    @media (max-width: 900px) {
+      justify-content: space-around;
+    }
+    @media (max-width: 705px) {
+      padding-right: 0;
+      padding-left: 200px;
+    }
+    @media (max-width: 450px) {
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 80px 18px 25px;
+      &::after {
+        position: absolute;
+        content: ' ';
+        width: 100%;
+        height: 1px;
+        background: $catskill;
+        top: 44%;
+        left: 0;
+      }
+    }
   }
 
   &__img-bg {
@@ -38,12 +63,24 @@
   }
 
   &__descr {
+    width: 100%;
     max-width: 240px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     z-index: 5;
+    @media (max-width: 1200px) {
+      max-width: 205px;
+    }
+    @media (max-width: 900px) {
+      max-width: 330px;
+      margin-left: 200px;
+    }
+    @media (max-width: 705px) {
+      max-width: 300px;
+      margin-left: 0;
+    }
   }
 
   &__title {
@@ -52,19 +89,37 @@
     line-height: 28px;
     letter-spacing: 0.02em;
     margin-bottom: 15px;
+    @media (max-width: 1200px) {
+      font-size: 2rem;
+      line-height: 23px;
+    }
+    @media (max-width: 705px) {
+      font-size: 1.8rem;
+      line-height: 20px;
+    }
   }
 
   &__list {
+    width: 100%;
     font-weight: 300;
     font-size: 1.8rem;
     line-height: 25px;
     padding-left: 20px;
     & li {
+      width: 100%;
       list-style-type: disc;
+      margin-bottom: 5px;
       color: $gold;
       & span {
         color: $mako;
       }
+    }
+    @media (max-width: 1200px) {
+      font-size: 1.6rem;
+      line-height: 20px;
+    }
+    @media (max-width: 705px) {
+      line-height: 18px;
     }
   }
 
@@ -76,7 +131,7 @@
 
   &__back {
     width: 95%;
-    height: 102%;
+    height: 101%;
     background-color: $royalblue;
     border-radius: 5px;
     box-shadow: 0px 30px 30px -15px rgba(40, 74, 183, 0.15);
