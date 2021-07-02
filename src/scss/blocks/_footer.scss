@@ -2,6 +2,9 @@
   &__top {
     background: $charade;
     padding: 40px 0 43px;
+    @media (max-width: 980px) {
+      padding: 25px 0 28px;
+    }
 
     & .social {
       &__name {
@@ -23,14 +26,53 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0;
-  }
+    padding: 0 15px;
+    & .logo-link {
+      @media (max-width: 657px) {
+        display: none;
+      }
+    }
+    @media (max-width: 505px) {
+      width: 100%;
+      max-width: 225px;
+      padding: 0;
+      margin: 0 auto;
+      .offer {
+        grid-area: offer;
+      }
 
-  &__logo {
+      .telegram,
+      .whatsapp {
+        min-width: 40px;
+        min-height: 40px;
+        margin-top: -5px;
+      }
+
+      .social__whatsapp {
+        grid-area: whatsapp;
+      }
+      .social__telegram {
+        grid-area: telegram;
+        min-width: 40px;
+      }
+      .footer__telephone {
+        grid-area: telephone;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      display: grid;
+      grid-template-areas:
+        'telephone telephone telephone'
+        'offer whatsapp telegram';
+    }
   }
 
   &__telephone {
     color: $white;
+    @media (max-width: 657px) {
+      display: block;
+    }
   }
 
   &__bottom {
@@ -41,6 +83,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media (max-width: 800px) {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
     }
 
     &-text {
@@ -51,20 +97,69 @@
       &:nth-child(1) {
         width: 100%;
         max-width: 146px;
+        @media (max-width: 800px) {
+          max-width: 260px;
+          padding-top: 10px;
+        }
+        @media (max-width: 505px) {
+          padding-top: 15px;
+        }
       }
       &:nth-child(2) {
         width: 100%;
         max-width: 606px;
         text-align: right;
+        @media (max-width: 800px) {
+          text-align: center;
+        }
       }
     }
   }
 
   &__buttons {
-  }
-}
+    display: none;
+    @media (max-width: 992px) {
+      display: block;
+      padding: 40px 0;
 
-.logo-link {
+      &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid $catskill;
+        box-shadow: 0px 0px 30px rgba(41, 63, 133, 0.1);
+        border-radius: 5px;
+        @media (max-width: 575px) {
+          justify-content: space-around;
+          flex: 1 0;
+        }
+      }
+
+      &-item {
+        padding: 15px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33%;
+        &:not(:last-child) {
+          border-right: 1px solid $catskill;
+        }
+        @media (max-width: 576px) {
+          width: auto;
+          padding: 15px 17px;
+        }
+      }
+    }
+    @media (max-width: 900px) {
+      padding: 65px 0 75px;
+    }
+    @media (max-width: 576px) {
+      padding: 70px 0 95px;
+    }
+    @media (max-width: 450px) {
+      padding: 20px 0 27px;
+    }
+  }
 }
 
 .offer {
@@ -102,5 +197,53 @@
     font-size: 1.6rem;
     color: $white;
     transition: color 0.3s ease-in-out;
+  }
+}
+
+.footer-social {
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .name-phone {
+      display: none;
+      @media (max-width: 576px) {
+        display: block;
+        min-width: 160px;
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: $black;
+      }
+      @media (max-width: 450px) {
+        display: none;
+      }
+    }
+  }
+
+  &__img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    & .telegram,
+    .whatsapp,
+    .phone {
+      min-width: 40px;
+    }
+    & .telegram {
+      fill: $lochmara;
+    }
+    & .whatsapp {
+      fill: $esmerald;
+    }
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: $black;
+    @media (max-width: 576px) {
+      display: none;
+    }
   }
 }

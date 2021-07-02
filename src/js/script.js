@@ -71,9 +71,34 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: '.slider-arrow-right',
     },
     breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: false,
+      },
+      576: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        centeredSlides: true,
+      },
+      980: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+        centeredSlides: true,
+        loop: true,
+      },
       1200: {
         slidesPerView: 3,
         spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
       },
     },
   });
@@ -119,6 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
   tabs('.tab-triggers', '.tab-trigger', '.tab-item', 'active');
+  tabs('.dropdown__tab-triggers', '.dropdown__tab-trigger', '.tab-item', 'active');
 
   // * Dropdown ===========================
   const accordions = document.querySelectorAll('.dropdown');

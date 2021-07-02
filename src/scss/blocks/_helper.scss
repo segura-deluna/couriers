@@ -1,50 +1,158 @@
 .helper {
   padding: 60px 0 125px;
+  @media (max-width: 980px) {
+    padding: 50px 0;
+  }
+  @media (max-width: 705px) {
+    padding: 30px 0 35px;
+  }
+
   &__card {
     width: 100%;
     max-width: 1230px;
     height: 400px;
+    @media (max-width: 900px) {
+      height: 325px;
+    }
+    @media (max-width: 510px) {
+      height: 390px;
+      // width: 111%;
+      // margin-left: -15px;
+    }
+
     & .card__wrap {
+      position: relative;
       width: 100%;
       height: 100%;
       background-image: url('../img/helper-bg.jpg');
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: center;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      @media (max-width: 705px) {
+        padding: 0 35px;
+      }
+      @media (max-width: 510px) {
+        padding: 0 15px;
+      }
+
+      & .helper__bg-img1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 345px;
+        height: 258px;
+        @media (max-width: 900px) {
+          width: 250px;
+          height: 190px;
+        }
+        @media (max-width: 705px) {
+          width: 185px;
+          height: 140px;
+        }
+      }
+      & .helper__bg-img2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 345px;
+        height: 258px;
+        @media (max-width: 900px) {
+          width: 250px;
+          height: 190px;
+        }
+        @media (max-width: 705px) {
+          width: 185px;
+          height: 140px;
+        }
+      }
     }
   }
 
   &__title {
+    position: relative;
+    z-index: 1;
     font-weight: 700;
     font-size: 3.6rem;
     line-height: 42px;
     letter-spacing: 0.02em;
+    text-align: center;
     margin-bottom: 25px;
+    @media (min-width: 980px) {
+      font-size: 3.2rem;
+      line-height: 36px;
+    }
+    @media (max-width: 900px) {
+      font-size: 2.4rem;
+      line-height: 28px;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 510px) {
+      font-size: 2rem;
+      line-height: 22px;
+    }
   }
 
   &__descr,
   &__text {
+    position: relative;
+    z-index: 1;
     width: 100%;
     max-width: 900px;
     font-weight: 300;
     font-size: 1.8rem;
     line-height: 25px;
     text-align: center;
+    @media (max-width: 980px) {
+      width: 100%;
+      max-width: 700px;
+    }
+    @media (max-width: 900px) {
+      font-size: 1.6rem;
+      line-height: 22px;
+    }
+    @media (max-width: 510px) {
+      font-size: 1.5rem;
+      line-height: 20px;
+    }
   }
 
   &__descr {
     margin-bottom: 25px;
+    @media (max-width: 510px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 600px;
+    @media (max-width: 705px) {
+      max-width: 420px;
+    }
   }
 
   &__social {
+    position: relative;
+    z-index: 1;
     width: 100%;
     max-width: 540px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
+    @media (max-width: 900px) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: 705px) {
+      max-width: 430px;
+    }
+    @media (max-width: 510px) {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
   }
 
   &__whatsapp {
@@ -55,6 +163,14 @@
     transition: all 0.5s ease-in-out;
     &:hover {
       background: linear-gradient(266.42deg, #43e756 0%, #2fcb41 100%);
+    }
+    @media (max-width: 705px) {
+      max-width: 200px;
+    }
+    @media (max-width: 510px) {
+      max-width: 100%;
+      height: 50px;
+      margin-bottom: 15px;
     }
   }
 
@@ -71,6 +187,13 @@
     transition: all 0.5s ease-in-out;
     &:hover {
       background: linear-gradient(266.42deg, #1aa9f0 0%, #0082c2 100%);
+    }
+    @media (max-width: 705px) {
+      max-width: 200px;
+    }
+    @media (max-width: 510px) {
+      max-width: 100%;
+      height: 50px;
     }
   }
 }

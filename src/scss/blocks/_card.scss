@@ -25,15 +25,6 @@
       flex-direction: column;
       justify-content: flex-end;
       padding: 80px 18px 25px;
-      &::after {
-        position: absolute;
-        content: ' ';
-        width: 100%;
-        height: 1px;
-        background: $catskill;
-        top: 44%;
-        left: 0;
-      }
     }
   }
 
@@ -89,6 +80,7 @@
     line-height: 28px;
     letter-spacing: 0.02em;
     margin-bottom: 15px;
+    color: $black;
     @media (max-width: 1200px) {
       font-size: 2rem;
       line-height: 23px;
