@@ -181,18 +181,29 @@
       }
     }
   }
+}
 
-  &-btn {
-    display: none;
-    @media (max-width: 900px) {
-      display: flex;
-      max-width: 210px;
-      height: 60px;
-      font-size: 1.6rem;
-      margin: 40px auto 0;
-    }
-    @media (max-width: 450px) {
+.jobs-cards__link {
+  display: none;
+
+  @media (max-width: 900px) {
+    display: flex;
+    max-width: 210px;
+    height: 60px;
+    font-size: 1.6rem;
+    margin: 40px auto 40px;
+    & .jobs-cards__btn {
       max-width: 100%;
+      font-size: 1.6rem;
+      height: 60px;
+    }
+  }
+  @media (max-width: 450px) {
+    max-width: 100%;
+    margin: 20px auto 5px;
+    & .jobs-cards__btn {
+      max-width: 100%;
+      font-size: 1.6rem;
     }
   }
 }

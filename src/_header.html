@@ -38,13 +38,13 @@
         </a>
         <!-- /.social__telegramm -->
 
-        <a href="" class="help">
+        <div class="help open-popup" data-popup="popup1">
           <div class="help__item">
             <div class="help__img">
               <img src="img/help-header.svg" alt="help">
             </div>
           </div>
-        </a>
+        </div>
         <!-- /.help -->
 
         <div class="header__telephone telephone">+7 (999) 545-58-79</div>
@@ -84,6 +84,9 @@
               </li>
               <li class="content__item">
                 <a href="" class="content__link">Инструкция</a>
+              </li>
+              <li class="content__item">
+                <a href="" class="content__link">Пожаловаться</a>
               </li>
             </ul>
           </div>
@@ -134,13 +137,14 @@
       </a>
       <!-- /.social__telegramm -->
 
-      <a href="" class="help">
+
+      <div class="help open-popup" data-popup="popup1">
         <div class="help__item">
           <div class="help__img">
             <img src="img/help-header.svg" alt="help">
           </div>
         </div>
-      </a>
+      </div>
       <!-- /.help -->
 
       <div class="header__telephone telephone">+7 (999) 545-58-79</div>
@@ -182,6 +186,9 @@
             <li class="content__item">
               <a href="" class="content__link">Инструкция</a>
             </li>
+            <li class="content__item">
+              <a href="" class="content__link">Пожаловаться</a>
+            </li>
           </ul>
         </div>
         <!-- /.dropdown__content -->
@@ -204,5 +211,64 @@
     <!-- /.header__nav -->
   </div>
   <!-- /.container -->
+
 </header>
 <!-- /.header -->
+
+
+
+<!-- MODAL-MENU -->
+<div id="popup1" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="close">
+        <img src="img/close.svg" alt="close">
+      </div>
+      <div class="help__img">
+        <img src="img/help-header.svg" alt="help">
+      </div>
+    </div>
+    <div class="modal-body">
+      <ul>
+        <li>
+          <a href="" class="modal-link">
+            <svg>
+              <use xlink:href="img/icons/sprite.svg#whatsapp"></use>
+            </svg>
+            <span>Чат WhatsApp</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="modal-link">
+            <svg>
+              <use xlink:href="img/icons/sprite.svg#telegram"></use>
+            </svg>
+            <span>Чат Telegram</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="modal-link">
+            <svg>
+              <use xlink:href="img/icons/sprite.svg#phone"></use>
+            </svg>
+            <span>+7 (999) 545-58-79</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="modal-link">
+            <svg>
+              <use xlink:href="img/icons/sprite.svg#offer"></use>
+            </svg>
+            <span>Оферта</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="modal-link">
+            <span></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- /.modal-menu -->

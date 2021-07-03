@@ -2,6 +2,9 @@
   &__items {
     padding-top: 40px;
     margin-bottom: 90px;
+    @media (max-width: 1200px) {
+      margin-bottom: 70px;
+    }
     @media (max-width: 980px) {
       padding-top: 30px;
       margin-bottom: 50px;

@@ -37,20 +37,21 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     breakpoints: {
       320: {
-        slidesPerView: 1,
+        slidesPerView: 'auto',
         spaceBetween: 10,
         centeredSlides: true,
-        loop: false,
+        loop: true,
       },
       576: {
         slidesPerView: 2,
         spaceBetween: 30,
+        centeredSlides: false,
       },
       770: {
         slidesPerView: 3,
         spaceBetween: 30,
         centeredSlides: true,
-        loop: false,
+        loop: true,
       },
       1200: {
         slidesPerView: 3,
@@ -75,18 +76,24 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 1,
         spaceBetween: 30,
         centeredSlides: true,
-        loop: false,
+        loop: true,
       },
-      576: {
+      321: {
         slidesPerView: 1,
         spaceBetween: 30,
         centeredSlides: true,
-        loop: true,
+        loop: false,
       },
-      768: {
+      577: {
         slidesPerView: 2,
         spaceBetween: 30,
-        centeredSlides: true,
+        centeredSlides: false,
+        loop: true,
+      },
+      769: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        centeredSlides: false,
       },
       980: {
         slidesPerView: 3,
@@ -161,4 +168,29 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+  //
+  // * Open-Close modals =========
+  let popupsToggle = document.querySelectorAll('.open-popup');
+
+  let popupClose = document.querySelectorAll('.close');
+
+  popupsToggle.forEach(function (item) {
+    item.addEventListener('click', function () {
+      let popupName = item.getAttribute('data-popup');
+      document.getElementById(popupName).style.display = 'block';
+    });
+  });
+
+  popupClose.forEach(function (item) {
+    item.addEventListener('click', function () {
+      let popup = item.closest('.modal');
+      popup.style.display = 'none';
+    });
+  });
+
+  window.onclick = function (e) {
+    if (e.target.classList.contains('modal')) {
+      e.target.style.display = 'none';
+    }
+  };
 });

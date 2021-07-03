@@ -118,7 +118,7 @@
       }
     }
 
-    @media (max-width: 980px) {
+    @media (max-width: 900px) {
       max-width: 100%;
 
       &:nth-child(1),
@@ -301,6 +301,11 @@
             top: 0;
           }
         }
+        @media (max-width: 330px) {
+          & .card__descr {
+            margin-bottom: 0;
+          }
+        }
       }
       &:nth-child(3) {
         & .card__img-front {
@@ -347,6 +352,9 @@
             transform: translateX(-50%);
           }
         }
+      }
+      & .card__descr {
+        margin-bottom: 20px;
       }
     }
   }
