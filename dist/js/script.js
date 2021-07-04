@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
     watchSlidesVisibility: true,
     slidesPerView: 4,
     spaceBetween: 30,
+    centeredSlides: false,
+    loopedSlides: 8,
     loop: true,
     navigation: {
       nextEl: '.slider-arrow-left',
@@ -53,10 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
         centeredSlides: true,
         loop: true,
       },
-      1200: {
-        slidesPerView: 3,
+      1000: {
+        slidesPerView: 4,
         spaceBetween: 30,
-        centeredSlides: true,
+        centeredSlides: false,
         loop: true,
       },
     },

@@ -529,7 +529,10 @@
     line-height: 19px;
     border: none;
     border: 1px solid $catskill;
-    border-radius: 5px;
+
+    &.dropdown {
+      border-radius: 5px;
+    }
   }
 
   &__submit {
