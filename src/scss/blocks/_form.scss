@@ -12,8 +12,16 @@
     @media (max-width: 705px) {
       padding-top: 10px;
     }
+    @media (max-width: 576px) {
+      padding-top: 10px;
+      padding-bottom: 40px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid $catskill;
+    }
     @media (max-width: 450px) {
-      padding-top: 0;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      margin-bottom: 40px;
     }
   }
 
@@ -23,6 +31,9 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 30px;
+    @media (max-width: 450px) {
+      gap: 0px;
+    }
 
     & .item1 {
       grid-area: 1 / 1 / 2 / 4;
@@ -473,6 +484,9 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+    @media (max-width: 450px) {
+      height: 100px;
+    }
     & label {
       display: block;
       font-weight: 500;

@@ -110,6 +110,9 @@
   @media (max-width: 705px) {
     flex-direction: column;
   }
+  @media (max-width: 450px) {
+    margin-bottom: 30px;
+  }
 
   &__title {
     font-weight: 700;

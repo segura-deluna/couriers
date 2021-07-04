@@ -34,6 +34,7 @@
     @media (max-width: 450px) {
       font-size: 2.2rem;
       line-height: 25px;
+      margin-bottom: 40px;
     }
   }
 
@@ -53,6 +54,9 @@
     }
     @media (max-width: 705px) {
       gap: 40px;
+    }
+    @media (max-width: 450px) {
+      margin-bottom: 20px;
     }
   }
 
@@ -245,16 +249,57 @@
     }
     @media (max-width: 450px) {
       min-height: 290px;
+      @media (max-width: 320px) {
+        &:nth-child(1) {
+          min-height: 230px;
+          & .card__wrap {
+            position: relative;
+            &::after {
+              position: absolute;
+              content: ' ';
+              width: 100%;
+              height: 1px;
+              background: $catskill;
+              top: 55%;
+              left: 0;
+            }
+          }
+        }
+        &:nth-child(2) {
+          min-height: 270px;
+          & .card__wrap {
+            position: relative;
+            &::after {
+              position: absolute;
+              content: ' ';
+              width: 100%;
+              height: 1px;
+              background: $catskill;
+              top: 47%;
+              left: 0;
+            }
+          }
+        }
+        &:nth-child(3) {
+          min-height: 240px;
+        }
+        &:nth-child(4) {
+          min-height: 240px;
+        }
+      }
 
       & .card__wrap {
         position: relative;
+        @media (max-width: 320px) {
+          padding: 80px 18px 18px;
+        }
         &::after {
           position: absolute;
           content: ' ';
           width: 100%;
           height: 1px;
           background: $catskill;
-          top: 44%;
+          top: 53%;
           left: 0;
         }
       }
@@ -353,8 +398,18 @@
           }
         }
       }
+
+      & .card__title {
+        @media (max-width: 320px) {
+          margin-bottom: 8px;
+        }
+      }
+
       & .card__descr {
         margin-bottom: 20px;
+        @media (max-width: 320px) {
+          margin-bottom: 0;
+        }
       }
     }
   }

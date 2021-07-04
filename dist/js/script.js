@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 30,
         centeredSlides: false,
       },
-      770: {
+      767: {
         slidesPerView: 3,
         spaceBetween: 30,
         centeredSlides: true,
@@ -78,19 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
         centeredSlides: true,
         loop: true,
       },
-      321: {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        centeredSlides: true,
-        loop: false,
-      },
-      577: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        centeredSlides: false,
-        loop: true,
-      },
-      769: {
+
+      767: {
         slidesPerView: 2,
         spaceBetween: 30,
         centeredSlides: false,
