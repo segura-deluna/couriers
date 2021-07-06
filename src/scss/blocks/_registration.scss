@@ -57,6 +57,16 @@
       @media (max-width: 450px) {
         display: block;
         margin-bottom: 20px;
+        & .dropdown__title {
+          border: 1px solid $catskill;
+          border-radius: 5px;
+        }
+        &.dropdown--white.active {
+          & .dropdown__title {
+            border: 1px solid $catskill;
+            border-radius: 5px;
+          }
+        }
       }
     }
   }

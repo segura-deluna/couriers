@@ -3677,6 +3677,14 @@ svg {
     display: block;
     margin-bottom: 20px;
   }
+  .registration__tabs-dropdown .dropdown__title {
+    border: 1px solid #ebeff6;
+    border-radius: 5px;
+  }
+  .registration__tabs-dropdown.dropdown--white.active .dropdown__title {
+    border: 1px solid #ebeff6;
+    border-radius: 5px;
+  }
 }
 
 .registration__tab {
